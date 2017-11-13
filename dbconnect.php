@@ -1,7 +1,7 @@
 <?php
 	error_reporting( ~E_DEPRECATED & ~E_NOTICE );
 
-	define('DBHOST', 'localhost');
+	define('DBHOST', localhost);
 	define('DBUSER', 'TRANSATRANSA');
 	define('DBPASS', 'udperritos');
 	define('DBNAME', 'dbtransa');
