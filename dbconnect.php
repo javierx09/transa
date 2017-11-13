@@ -1,7 +1,7 @@
 <?php
 	error_reporting( ~E_DEPRECATED & ~E_NOTICE );
 
-	define('DBHOST', '168.232.167.2');
+	define('DBHOST', '168.232.167.26');
 	define('DBUSER', 'TRANSATRANSA');
 	define('DBPASS', 'udperritos');
 	define('DBNAME', 'dbtransa');
@@ -16,3 +16,4 @@
 	if ( !$dbcon ) {
 		die("Database Connection failed : " . mysql_error());
 	}
+?>
