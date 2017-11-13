@@ -11,6 +11,7 @@
 	// select loggedin users detail
 	$res=mysql_query("SELECT * FROM users WHERE userId=".$_SESSION['user']);
 	$userRow=mysql_fetch_array($res);
+	$register=DBHOST."/register.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -26,7 +27,7 @@
 
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="http://transaspa.ddns.net/register.php">Registrar Usuario</a></li>
+            <li><a href=DBHOST"/register.php">Registrar Usuario</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
