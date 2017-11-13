@@ -2,7 +2,7 @@
 	ob_start();
 	session_start();
 	require_once 'dbconnect.php';
-	
+
 	// if session is not set this will redirect to login page
 	if( !isset($_SESSION['user']) ) {
 		header("Location: index.php");
@@ -25,11 +25,10 @@
       <div class="container">
 
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav"> 
+          <ul class="nav navbar-nav">
             <li><a href="http://transaspa.ddns.net/register.php">Registrar Usuario</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 			  <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['userEmail']; ?>&nbsp;<span class="caret"></span></a>
@@ -40,28 +39,28 @@
           </ul>
         </div><!--/.nav-collapse -->
       </div>
-    </nav> 
+    </nav>
 	<div id="wrapper">
 
 	<div class="container">
-    
+
     	<div class="page-header">
     	<h3>Coding Cage - Programming Blog</h3>
     	</div>
-        
+
         <div class="row">
         <div class="col-lg-12">
         <h1>oliwi</h1>
         </div>
         </div>
-    
+
     </div>
-    
+
     </div>
-    
+
     <script src="assets/jquery-1.11.3-jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    
+
 </body>
 </html>
 <?php ob_end_flush(); ?>
