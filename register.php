@@ -1,7 +1,7 @@
 <?php
 	ob_start();
 	session_start();
-	if( (isset($_SESSION['user'])!="")  ){
+	if( (isset($_SESSION['user'])!="") && ($_SESSION['tipo'] == 2)  ){
 		include_once 'dbconnect.php';
 
 		$error = false;
