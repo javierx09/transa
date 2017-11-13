@@ -99,7 +99,7 @@
 	    	<div class="col-md-12">
 
 	        	<div class="form-group">
-	            	<h2 class="">Sign Up.</h2>
+	            	<h2 class="">REGISTRAR USUARIO.</h2>
 	            </div>
 
 	        	<div class="form-group">
@@ -122,7 +122,7 @@
 	            <div class="form-group">
 	            	<div class="input-group">
 	                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-	            	<input type="text" name="name" class="form-control" placeholder="Enter Name" maxlength="50" value="<?php echo $name ?>" />
+	            	<input type="text" name="name" class="form-control" placeholder="Ingresar nombre" maxlength="50" value="<?php echo $name ?>" />
 	                </div>
 	                <span class="text-danger"><?php echo $nameError; ?></span>
 	            </div>
@@ -130,7 +130,7 @@
 	            <div class="form-group">
 	            	<div class="input-group">
 	                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-	            	<input type="email" name="email" class="form-control" placeholder="Enter Your Email" maxlength="40" value="<?php echo $email ?>" />
+	            	<input type="email" name="email" class="form-control" placeholder="Ingresar usuario" maxlength="40" value="<?php echo $email ?>" />
 	                </div>
 	                <span class="text-danger"><?php echo $emailError; ?></span>
 	            </div>
@@ -138,26 +138,34 @@
 	            <div class="form-group">
 	            	<div class="input-group">
 	                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-	            	<input type="password" name="pass" class="form-control" placeholder="Enter Password" maxlength="15" />
+	            	<input type="password" name="pass" class="form-control" placeholder="Ingresar contrasñea" maxlength="15" />
 	                </div>
 	                <span class="text-danger"><?php echo $passError; ?></span>
 	            </div>
 
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon"><span class="glyphicons glyphicons-group"></span></span>
+								<select id="tipo" class="input-group-addon" data-live-search="true" title="Selecciona tipo de acceso para este nuevo usuario">
+									<option value="OPERARIO">1</option>
+									<option value="ADMINISTRADOR">2</option>
+								</select>
+								</div>
+									<span class="text-danger"><?php echo $passError; ?></span>
+							</div>
+
 	            <div class="form-group">
 	            	<hr />
 	            </div>
 
 	            <div class="form-group">
-	            	<button type="submit" class="btn btn-block btn-primary" name="btn-signup">Sign Up</button>
+	            	<button type="submit" class="btn btn-block btn-primary" name="btn-signup">Registrar Usuario</button>
 	            </div>
 
 	            <div class="form-group">
 	            	<hr />
 	            </div>
 
-	            <div class="form-group">
-	            	<a href="index.php">Sign in Here...</a>
-	            </div>
 
 	        </div>
 
