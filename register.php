@@ -62,7 +62,7 @@
 			// if there's no error, continue to signup
 			if( !$error ) {
 
-				$query = "INSERT INTO users(userName,userEmail,userPass) VALUES('$name','$email','$password')";
+				$query = "INSERT INTO users(userName,userEmail,userPass,TIPO) VALUES('$name','$email','$password',$tipo)";
 				$res = mysql_query($query);
 
 				if ($res) {
@@ -145,8 +145,8 @@
 
 							<div class="form-group">
 								<div class="input-group">
-									<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-								<select class="form-control" id="tipo" data-live-search="true" placeholder="Selecciona tipo de acceso para este nuevo usuario">
+									<span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+								<select class="form-control" input type="tipo" data-live-search="true" placeholder="Selecciona tipo de acceso para este nuevo usuario">
 									<option value=1>OPERARIO</option>
 									<option value=2>ADMINISTRADOR</option>
 								</select>
