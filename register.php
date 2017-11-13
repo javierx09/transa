@@ -145,7 +145,7 @@
 
 							<div class="form-group">
 								<div class="input-group">
-									<span class="input-group-addon"><span class="glyphicon glyphicon-group"></span></span>
+									<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
 								<select class="form-control" id="tipo" data-live-search="true" placeholder="Selecciona tipo de acceso para este nuevo usuario">
 									<option value=1>OPERARIO</option>
 									<option value=2>ADMINISTRADOR</option>
