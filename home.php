@@ -26,7 +26,7 @@
 
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="127.0.0.1/TRANSA/register.php">Registrar Usuario</a></li>
+            <li><a href="http://127.0.0.1/TRANSA/register.php">Registrar Usuario</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
