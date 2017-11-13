@@ -146,10 +146,10 @@
 							<div class="form-group">
 								<div class="input-group">
 									<span class="input-group-addon"><span class="glyphicons glyphicons-group"></span></span>
-										<select class="form-control" id="tipo" data-live-search="true" placeholder="Selecciona tipo de acceso para este nuevo usuario">
-											<option value="OPERARIO">1</option>
-											<option value="ADMINISTRADOR">2</option>
-										</select>
+								<select class="form-control" id="tipo" data-live-search="true" placeholder="Selecciona tipo de acceso para este nuevo usuario">
+									<option value=1>OPERARIO</option>
+									<option value=2>ADMINISTRADOR</option>
+								</select>
 								</div>
 									<span class="text-danger"><?php echo $passError; ?></span>
 							</div>
