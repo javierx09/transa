@@ -138,7 +138,7 @@
 	            <div class="form-group">
 	            	<div class="input-group">
 	                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-	            	<input type="password" name="pass" class="form-control" placeholder="Ingresar contrasñea" maxlength="15" />
+	            	<input type="password" name="pass" class="form-control" placeholder="Ingresar contraseña" maxlength="15" />
 	                </div>
 	                <span class="text-danger"><?php echo $passError; ?></span>
 	            </div>
@@ -146,10 +146,10 @@
 							<div class="form-group">
 								<div class="input-group">
 									<span class="input-group-addon"><span class="glyphicons glyphicons-group"></span></span>
-								<select id="tipo" class="input-group-addon" data-live-search="true" title="Selecciona tipo de acceso para este nuevo usuario">
-									<option value="OPERARIO">1</option>
-									<option value="ADMINISTRADOR">2</option>
-								</select>
+										<select class="form-control" id="tipo" data-live-search="true" placeholder="Selecciona tipo de acceso para este nuevo usuario">
+											<option value="OPERARIO">1</option>
+											<option value="ADMINISTRADOR">2</option>
+										</select>
 								</div>
 									<span class="text-danger"><?php echo $passError; ?></span>
 							</div>
