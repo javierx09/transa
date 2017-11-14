@@ -45,6 +45,9 @@ if ( isset($_POST['btn-buscar']) ) {
 	$query = "SELECT * FROM users WHERE userEmail='$buscar'";
 	$result = mysql_query($query);
 	$res = mysql_query($query);
+	$resultado = trim($res);
+	$resultado = strip_tags($resultado);
+	$resultado = htmlspecialchars($resultado); 
 	while($row = mysqli_fetch_array($res))
 {
 			echo "<tr>
