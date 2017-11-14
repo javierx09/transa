@@ -40,7 +40,7 @@
 									$query = "SELECT * FROM users WHERE CONCAT(userId, userName, userEmail, TIPO) LIKE '%.$valueToSearch.%'";
 									$search_result = filterTable($query);
 									$count = mysql_num_rows($search_result);
-									if(($count)!=0){
+									if($count!=0){
 									?>
 									<html>
 									<body>
