@@ -42,11 +42,12 @@ if ( isset($_POST['btn-buscar']) ) {
 	$query = "SELECT * FROM users WHERE userEmail='$buscar'";
 	$result = mysql_query($query);
 	$res = mysql_query($query);
-	echo '<table>
-					<PRE>
-						print_r($res)
-					</PRE>
-				</table>';
+	while($row = mysqli_fetch_array($res))
+		{
+			echo "<tr>";
+			echo "<td>" . $row['userEmail'] . "</td>";
+			echo "</tr>";
+}
 
 }
 ?>
