@@ -46,10 +46,10 @@ if ( isset($_POST['btn-buscar']) ) {
 	$result = mysql_query($query);
 	$res = mysql_query($query);
 	while($row = mysqli_fetch_array($res))
-		{
-			echo '<tr>
-			      <td>.$row['userEmail'].</td>
-						</tr>';
+{
+			echo "<tr>
+			      	<td>.$row['userEmail'].</td>
+						</tr>";
 }
 
 }
