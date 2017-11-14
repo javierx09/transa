@@ -16,6 +16,28 @@
 	    // using concat mysql function
 	    $query = "SELECT * FROM users WHERE CONCAT(userId, userName, userEmail, TIPO) LIKE '%".$valueToSearch."%'";
 	    $search_result = filterTable($query);
+			?>
+			<html>
+			<table>
+					<tr>
+							<th>Id</th>
+							<th>Nombre</th>
+							<th>Email</th>
+							<th>Tipo</th>
+					</tr>
+<!-- populate table from mysql database -->
+					<?php while($row = mysql_fetch_array($search_result)):?>
+					<tr>
+							<td><?php echo $row['userId'];?></td>
+							<td><?php echo $row['userName'];?></td>
+							<td><?php echo $row['userEmail'];?></td>
+							<td><?php if(($row['TIPO'])==2){echo 'Administrador';}else{echo 'Operario';}?></td>
+					</tr>
+					<?php endwhile;?>
+			</table>
+			</html>
+			<?php
+
 
 	}
 	 else {
@@ -44,23 +66,7 @@
 	            <input type="text" name="valueToSearch" placeholder="Value To Search"><br><br>
 	            <input type="submit" name="search" value="Filter"><br><br>
 
-	            <table>
-	                <tr>
-	                    <th>Id</th>
-	                    <th>Nombre</th>
-											<th>Email</th>
-											<th>Tipo</th>
-	                </tr>
-    <!-- populate table from mysql database -->
-	                <?php while($row = mysql_fetch_array($search_result)):?>
-	                <tr>
-	                    <td><?php echo $row['userId'];?></td>
-	                    <td><?php echo $row['userName'];?></td>
-	                    <td><?php echo $row['userEmail'];?></td>
-	                    <td><?php if(($row['TIPO'])==2){echo 'Administrador';}else{echo 'Operario';}?></td>
-	                </tr>
-	                <?php endwhile;?>
-	            </table>
+
 	        </form>
 
 	    </body>
