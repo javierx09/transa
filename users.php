@@ -48,6 +48,8 @@
 	                <tr>
 	                    <th>Id</th>
 	                    <th>Nombre</th>
+											<th>Email<th>
+											<th>Tipo<th>
 	                </tr>
 
 	      <!-- populate table from mysql database -->
@@ -56,7 +58,7 @@
 	                    <td><?php echo $row['userId'];?></td>
 	                    <td><?php echo $row['userName'];?></td>
 	                    <td><?php echo $row['userEmail'];?></td>
-	                    <td><?php echo $row['TIPO'];?></td>
+	                    <td><?php if(($row['TIPO'])==2){echo 'Administrador';}else{echo 'Operario';}?></td>
 	                </tr>
 	                <?php endwhile;?>
 	            </table>
