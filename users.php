@@ -46,7 +46,7 @@ if ( isset($_POST['btn-buscar']) ) {
 					<PRE>
 						print_r($res)
 					</PRE>
-				</table>'
+				</table>';
 
 }
 ?>
