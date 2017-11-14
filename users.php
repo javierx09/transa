@@ -48,7 +48,7 @@ if ( isset($_POST['btn-buscar']) ) {
 	while($row = mysqli_fetch_array($res))
 {
 			echo "<tr>
-			      	<td>.$row['userEmail'].</td>
+			      	<td>.$res['userEmail'].</td>
 						</tr>";
 }
 
