@@ -48,7 +48,8 @@
 	                <tr>
 	                    <th>Id</th>
 	                    <th>Nombre</th>
-											<th>Email<th>
+											<th>Email</th>
+											<th>Tipo</th>
 	                </tr>
     <!-- populate table from mysql database -->
 	                <?php while($row = mysql_fetch_array($search_result)):?>
