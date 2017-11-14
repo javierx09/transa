@@ -27,6 +27,11 @@
 					<div class="row">
 					<div class="col-lg-12">
 					<input type="busqueda" name="search" placeholder="Search..">
+					<span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+					</span>
 					</div>
 					</div>
 
