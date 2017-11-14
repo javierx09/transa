@@ -6,7 +6,7 @@
 
 		function filterTable($query)
 		{
-		    $filter_Result = mysql_query($query);
+		    $filter_Result = mysql_query($query) or die("Error en: $query: " . mysql_error());;
 		    return $filter_Result;
 		}
 	if(isset($_POST['search']))
@@ -65,28 +65,6 @@
 	    </body>
 	</html>
 <?php
-if ( isset($_POST['btn-buscar']) ) {
-
-	$error = false;
-	$buscar = trim($_POST['busqueda']);
-	$buscar = strip_tags($buscar);
-	$buscar = htmlspecialchars($buscar);
-	$query = "SELECT * FROM users WHERE userEmail='$buscar'";
-	$result = mysql_query($query);
-	$res = mysql_query($query);
-	$resultado = trim($res);
-	$resultado = strip_tags($resultado);
-	$resultado = htmlspecialchars($resultado);
-	while($row = mysqli_fetch_array($res))
-{
-
-			echo '<div>
-						<a href="users.php>"><img src="http://www.mysite.com/images/logo.jpg" width="50" height="50" alt="La mia pagina su Mysite"/></a>
-            </div>';
-}
-
-}
-?>
 </div>
 </body>
 </html>
