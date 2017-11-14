@@ -16,7 +16,28 @@
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	</head>
 	<body>
-		<input type="busqueda" name="search" placeholder="Search..">
+		<div id="wrapper">
+
+		<div class="container">
+
+				<div class="page-header">
+				<h3>Ingrese el nombre de la persona a la que quiere buscar</h3>
+				</div>
+
+					<div class="row">
+					<div class="col-lg-12">
+					<input type="busqueda" name="search" placeholder="Search..">
+					</div>
+					</div>
+
+			</div>
+
+			</div>
+
+			<script src="assets/jquery-1.11.3-jquery.min.js"></script>
+			<script src="assets/js/bootstrap.min.js"></script>
+
+
 	</body>
 </html>
 
