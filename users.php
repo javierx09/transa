@@ -47,9 +47,9 @@ if ( isset($_POST['btn-buscar']) ) {
 	$res = mysql_query($query);
 	while($row = mysqli_fetch_array($res))
 		{
-			echo "<tr>";
-			echo "<td>" . $row['userEmail'] . "</td>";
-			echo "</tr>";
+			echo '<tr>
+			      <td> . $row['userEmail'] . </td>
+						</tr>';
 }
 
 }
