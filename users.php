@@ -6,7 +6,7 @@
 
 		function filterTable($query)
 		{
-		    $filter_Result = mysqli_query($query);
+		    $filter_Result = mysql_query($query);
 		    return $filter_Result;
 		}
 	if(isset($_POST['search']))
@@ -51,7 +51,7 @@
 	                </tr>
 
 	      <!-- populate table from mysql database -->
-	                <?php while($row = mysqli_fetch_array($search_result)):?>
+	                <?php while($row = mysql_fetch_array($search_result)):?>
 	                <tr>
 	                    <td><?php echo $row['id'];?></td>
 	                    <td><?php echo $row['fname'];?></td>
