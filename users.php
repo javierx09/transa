@@ -32,6 +32,7 @@
         </div>
 	</div>
 </div>
+<div class="container">
 <?php
 if ( isset($_POST['btn-buscar']) ) {
 
@@ -51,7 +52,7 @@ if ( isset($_POST['btn-buscar']) ) {
 
 }
 ?>
-
+</div>
 </body>
 </html>
 	<?php ob_end_flush();
