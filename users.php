@@ -64,10 +64,6 @@
 
 	    </body>
 	</html>
-<?php
-</div>
-</body>
-</html>
 	<?php ob_end_flush();
 	}else{
 		header("Location: home.php");
