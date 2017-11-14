@@ -21,12 +21,14 @@
     		<h2>Custom search field</h2>
             <div id="custom-search-input">
                 <div class="input-group col-md-12">
+									<form>
                     <input type="text" name="busqueda" class="form-control input-lg" placeholder="Buscar" />
                     <span class="input-group-btn">
-                        <button type="submit" class="btn btn-info btn-lg" name="btn-buscar">
+                        <button type="submit" class="btn btn-block btn-primary" name="btn-buscar">
                             <i class="glyphicon glyphicon-search"></i>
                         </button>
                     </span>
+									</form>
                 </div>
             </div>
         </div>
