@@ -14,7 +14,7 @@
 	    $valueToSearch = $_POST['valueToSearch'];
 	    // search in all table columns
 	    // using concat mysql function
-	    $query = "SELECT * FROM users WHERE CONCAT(id, userName, userEmail, TIPO) LIKE '%".$valueToSearch."%'";
+	    $query = "SELECT * FROM users WHERE CONCAT(userId, userName, userEmail, TIPO) LIKE '%".$valueToSearch."%'";
 	    $search_result = filterTable($query);
 
 	}
@@ -53,10 +53,10 @@
 	      <!-- populate table from mysql database -->
 	                <?php while($row = mysql_fetch_array($search_result)):?>
 	                <tr>
-	                    <td><?php echo $row['id'];?></td>
-	                    <td><?php echo $row['fname'];?></td>
-	                    <td><?php echo $row['lname'];?></td>
-	                    <td><?php echo $row['age'];?></td>
+	                    <td><?php echo $row['userId'];?></td>
+	                    <td><?php echo $row['userName'];?></td>
+	                    <td><?php echo $row['userEmail'];?></td>
+	                    <td><?php echo $row['TIPO'];?></td>
 	                </tr>
 	                <?php endwhile;?>
 	            </table>
