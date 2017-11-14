@@ -151,8 +151,8 @@
 								<div class="input-group">
 									<span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
 								<select class="form-control" name="tipo" data-live-search="true">
-									<option value=1>OPERARIO</option>
-									<option value=2>ADMINISTRADOR</option>
+									<option value="1">OPERARIO</option>
+									<option value="2">ADMINISTRADOR</option>
 								</select>
 								</div>
 									<span class="text-danger"><?php echo $passError; ?></span>
