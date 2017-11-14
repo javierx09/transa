@@ -22,7 +22,7 @@
 			$pass = htmlspecialchars($pass);
 
 			$tipo = trim($_POST['tipo']);
-			$tipo = strip_tags(tipo);
+			$tipo = strip_tags($tipo);
 			$tipo = htmlspecialchars($tipo);
 
 			// basic name validation
@@ -150,7 +150,7 @@
 							<div class="form-group">
 								<div class="input-group">
 									<span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
-								<select class="form-control" name="tipo" data-live-search="true">
+								<select class="form-control" name="tipo">
 									<option value="1">OPERARIO</option>
 									<option value="2">ADMINISTRADOR</option>
 								</select>
