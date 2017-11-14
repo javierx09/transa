@@ -84,7 +84,6 @@
 
             <?php
 			if ( isset($errMSG) ) {
-
 				?>
 				<div class="form-group">
             	<div class="alert alert-danger">
@@ -121,10 +120,6 @@
 
             <div class="form-group">
             	<hr />
-            </div>
-
-            <div class="form-group">
-            	<a href="register.php">Sign Up Here...</a>
             </div>
 
         </div>
