@@ -27,7 +27,7 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li>
-							<ul>
+							<ul class="dropdown-menu">
 								<li>
 									<a href="register.php">Registrar Usuario</a>
 								</li>
