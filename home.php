@@ -26,7 +26,7 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
 						<?php
-							if(($SESSION['tipo'])==2) {
+							if(($_SESSION['tipo'])==2) {
 								echo '<li class"dropdown">
 												<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administrar Usuarios</a>
 													<ul class="dropdown-menu">
