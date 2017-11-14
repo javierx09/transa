@@ -23,16 +23,17 @@
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class"dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administrar Usuarios</a>
-							<ul class="dropdown-menu">
-								<li><a href="register.php">Registrar Usuario</a></li>
-								<li><a href="users.php">ver usuarios</a></li>
-							</ul
-						</li>
+						<?php
+						echo '<li class"dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administrar Usuarios</a>
+												<ul class="dropdown-menu">
+													<li><a href="register.php">Registrar Usuario</a></li>
+													<li><a href="users.php">ver usuarios</a></li>
+												</ul
+									</li>';
+						?>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
