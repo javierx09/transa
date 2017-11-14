@@ -4,7 +4,11 @@
 	if(isset($_SESSION['user'])!="" && ($_SESSION['tipo'])==2){
 		include_once 'dbconnect.php';
 
-
+		function filterTable($query)
+		{
+		    $filter_Result = mysqli_query($query);
+		    return $filter_Result;
+		}
 	if(isset($_POST['search']))
 	{
 	    $valueToSearch = $_POST['valueToSearch'];
@@ -20,11 +24,6 @@
 	}
 
 	// function to connect and execute the query
-	function filterTable($query)
-	{
-	    $filter_Result = mysqli_query($query);
-	    return $filter_Result;
-	}
 
 	?>
 
