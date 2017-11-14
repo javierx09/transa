@@ -18,6 +18,7 @@
 	    $search_result = filterTable($query);
 			?>
 			<html>
+			<body>
 			<table>
 					<tr>
 							<th>Id</th>
@@ -35,6 +36,7 @@
 					</tr>
 					<?php endwhile;?>
 			</table>
+			</body>
 			</html>
 			<?php
 
