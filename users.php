@@ -50,9 +50,7 @@ if ( isset($_POST['btn-buscar']) ) {
 	$resultado = htmlspecialchars($resultado);
 	while($row = mysqli_fetch_array($res))
 {
-			echo "<tr>
-			      	<td>.$resultado['userEmail'].</td>
-						</tr>";
+			echo "<a href="users.php>"><img src="http://www.mysite.com/images/logo.jpg" width="50" height="50" alt="La mia pagina su Mysite"/></a>;
 }
 
 }
