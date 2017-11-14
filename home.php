@@ -28,7 +28,7 @@
           <ul class="nav navbar-nav">
             <li class="dropdown">
 						Administrar Usuario
-							<a href="register.php">Registrar Usuario</a>
+							<li><a href="register.php">Registrar Usuario</a></li>
 						</li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
