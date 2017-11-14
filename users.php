@@ -43,13 +43,10 @@ if ( isset($_POST['btn-buscar']) ) {
 	$result = mysql_query($query);
 	$res = mysql_query($query);
 	echo '<table>';
-for ($i = 0; $i < $max; $i++)
-{
 	echo "<PRE>";
 	print_r($res);
 	echo "</PRE>";
-}
-echo '</table>';
+	echo '</table>';
 
 }
 ?>
