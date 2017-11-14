@@ -27,8 +27,10 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="dropdown">
-						Administrar Usuario
-							<li><a href="register.php">Registrar Usuario</a></li>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+							<ul class="dropdown-menu">
+								<li><a href="register.php">Registrar Usuario</a></li>
+							</ul>
 						</li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
