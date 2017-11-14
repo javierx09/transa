@@ -47,11 +47,11 @@ if ( isset($_POST['btn-buscar']) ) {
 	$res = mysql_query($query);
 	$resultado = trim($res);
 	$resultado = strip_tags($resultado);
-	$resultado = htmlspecialchars($resultado); 
+	$resultado = htmlspecialchars($resultado);
 	while($row = mysqli_fetch_array($res))
 {
 			echo "<tr>
-			      	<td>.$res['userEmail'].</td>
+			      	<td>.$resultado['userEmail'].</td>
 						</tr>";
 }
 
