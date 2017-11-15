@@ -18,13 +18,9 @@
 	<!DOCTYPE html>
 	<html>
 	    <head>
-	        <title>PHP HTML TABLE DATA SEARCH</title>
-	        <style>
-	            table,tr,th,td
-	            {
-	                border: 1px solid black;
-	            }
-	        </style>
+				<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+				<title>Coding Cage - Login & Registration System</title>
+				<link rel="stylesheet" href="style.css" type="text/css" />
 	    </head>
 	    <body>
 
