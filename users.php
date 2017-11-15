@@ -28,6 +28,9 @@
 				<div id="login-form">
 	        <form action="users.php" class="searchbox_1" method="post">
 						<div class="col-md-12">
+							<div class="form-group">
+									<h2 class="">Buscar Usuario.</h2>
+								</div>
 	            <input type="text" name="valueToSearch" class="search_1" placeholder="Value To Search"><br><br>
 	            <input type="submit" name="search" class="submit_1" value="Filter"><br><br>
 							<?php
