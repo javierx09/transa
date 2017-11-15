@@ -41,6 +41,12 @@
 									?>
 									<html>
 									<head>
+									<style>
+										table,tr,th,td
+										{
+											border: 1px solid black;
+										}
+									</style>
 										<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 										<title>Coding Cage - Login & Registration System</title>
 										<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />
