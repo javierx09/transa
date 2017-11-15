@@ -96,7 +96,7 @@
 
             <div class="form-group">
             	<div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon-glyphicon-apple"></span></span>
+                <span class="input-group-addon"><span class="glyphicon glyphicon-flash"></span></span>
             	<input type="email" name="email" class="form-control" placeholder="Ingrese RUT sin puntos ni guión" value="<?php echo $email; ?>" maxlength="40" />
                 </div>
                 <span class="text-danger"><?php echo $emailError; ?></span>
