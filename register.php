@@ -39,7 +39,7 @@
 
 			//basic email validation
 			if ( !filter_var($email,FILTER_VALIDATE_EMAIL) ) {
-				$error = true;
+				$error = false;
 				$emailError = "Please enter valid email address.";
 			} else {
 				// check email exist or not
