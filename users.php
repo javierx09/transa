@@ -54,7 +54,6 @@
 									th {
 									    height: 50px;
 									}
-									tr:hover {background-color: #f5f5f5}
 									</style>
 										<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 										<title>Coding Cage - Login & Registration System</title>
