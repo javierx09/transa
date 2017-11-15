@@ -37,7 +37,7 @@
 									$valueToSearch = $_POST['valueToSearch'];
 									// search in all table columns
 									// using concat mysql function
-									$query = "SELECT * FROM users WHERE CONCAT(userId,userName,userEmail,TIPO) LIKE '%.$valueToSearch.%'";
+									$query = "SELECT * FROM users WHERE CONCAT(userId, userName, userEmail, TIPO) LIKE '%.$valueToSearch.%'";
 									$search_result = filterTable($query);
 									$count = mysql_num_rows($search_result);
 									?>
