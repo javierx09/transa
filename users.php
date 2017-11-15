@@ -27,7 +27,6 @@
 		<div class="container">
 				<div id="login-form">
 	        <form action="users.php" class="searchbox_1" method="post">
-						<div class="col-md-12">
 							<div class="form-group">
 									<h2 class="">BUSCAR USUARIO.</h2>
 								</div>
@@ -97,7 +96,7 @@
 
 							 ?>
 
-						</div>
+
 
 
 	        </form>
