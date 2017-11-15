@@ -48,12 +48,17 @@
 									<head>
 									<style>
 									table {
-									    width: 100%;
+    								border-collapse: collapse;
+    								width: 100%;
 									}
 
-									th {
-									    height: 50px;
+									th, td {
+    								padding: 8px;
+    								text-align: left;
+    								border-bottom: 1px solid #ddd;
 									}
+
+									tr:hover{background-color:#f5f5f5}
 									</style>
 										<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 										<title>Coding Cage - Login & Registration System</title>
