@@ -27,6 +27,7 @@
 		<div class="container">
 
 	        <form action="users.php" class="searchbox_1" method="post">
+						<div class="col-md-12">
 	            <input type="text" name="valueToSearch" class="search_1" placeholder="Value To Search"><br><br>
 	            <input type="submit" name="search" class="submit_1" value="Filter"><br><br>
 							<?php
@@ -84,6 +85,8 @@
 
 
 							 ?>
+
+						</div>
 
 
 	        </form>
