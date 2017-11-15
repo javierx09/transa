@@ -30,8 +30,8 @@
 							<div class="form-group">
 									<h2 class="">BUSCAR USUARIO.</h2>
 								</div>
-	            <input type="text" name="valueToSearch" class="search_1" placeholder="Value To Search"><br><br>
-	            <input type="submit" name="search" class="submit_1" value="Filter"><br><br>
+	            <input type="text" name="valueToSearch" class="search_1" placeholder="Ingrese Rut"><br><br>
+	            <input type="submit" name="search" class="submit_1" value="Ingrese RUT sin puntos ni guión"><br><br>
 							<?php
 							if(isset($_POST['search']))
 							{
@@ -67,7 +67,7 @@
 									<body>
 									<table>
 											<tr>
-													<th>Id</th>
+													<th>Rut</th>
 													<th>Nombre</th>
 													<th>Email</th>
 													<th>Tipo</th>
