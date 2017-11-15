@@ -28,9 +28,9 @@
 	    </head>
 	    <body>
 
-	        <form action="users.php" method="post">
-	            <input type="text" name="valueToSearch" placeholder="Value To Search"><br><br>
-	            <input type="submit" name="search" value="Filter"><br><br>
+	        <form action="users.php" class="searchbox_1" method="post">
+	            <input type="text" name="valueToSearch" class="search_1" placeholder="Value To Search"><br><br>
+	            <input type="submit" name="search" class="submit_1" value="Filter"><br><br>
 							<?php
 							if(isset($_POST['search']))
 							{
