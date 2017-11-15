@@ -18,12 +18,13 @@
 	<!DOCTYPE html>
 	<html>
 	<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Coding Cage - Login & Registration System</title>
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	</head>
 	<body>
+		<div class="container">
 
 	        <form action="users.php" class="searchbox_1" method="post">
 	            <input type="text" name="valueToSearch" class="search_1" placeholder="Value To Search"><br><br>
@@ -86,6 +87,7 @@
 
 
 	        </form>
+				</div>
 
 	    </body>
 	</html>
