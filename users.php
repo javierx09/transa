@@ -19,7 +19,7 @@
 	<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Coding Cage - Login & Registration System</title>
+	<title>Buscar Usuario</title>
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	</head>
@@ -29,7 +29,7 @@
 	        <form action="users.php" class="searchbox_1" method="post">
 						<div class="col-md-12">
 							<div class="form-group">
-									<h2 class="">Buscar Usuario.</h2>
+									<h2 class="">BUSCAR USUARIO.</h2>
 								</div>
 	            <input type="text" name="valueToSearch" class="search_1" placeholder="Value To Search"><br><br>
 	            <input type="submit" name="search" class="submit_1" value="Filter"><br><br>
@@ -47,10 +47,14 @@
 									<html>
 									<head>
 									<style>
-										table,tr,th,td
-										{
-											border: 1px solid black;
-										}
+									table {
+									    width: 100%;
+									}
+
+									th {
+									    height: 50px;
+									}
+									tr:hover {background-color: #f5f5f5}
 									</style>
 										<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 										<title>Coding Cage - Login & Registration System</title>
