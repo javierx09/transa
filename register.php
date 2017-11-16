@@ -151,7 +151,7 @@
 								<div class="input-group">
 									<span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
 								<select class="form-control" name="tipo">
-									<option value="1">OPERARIO</option>
+									<option value="1">SUPERVISOR</option>
 									<option value="2">ADMINISTRADOR</option>
 								</select>
 								</div>

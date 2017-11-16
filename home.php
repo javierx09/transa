@@ -26,14 +26,31 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
 						<?php
-							if(isset($_SESSION['user'])!="" && ($_SESSION['tipo'])==2) {
+							if(isset($_SESSION['user'])!="") {
+								if(($_SESSION['tipo'])==2){
 								echo '<li class"dropdown">
 												<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administrar Usuarios</a>
 													<ul class="dropdown-menu">
 														<li><a href="register.php">Registrar Usuario</a></li>
 														<li><a href="users.php">ver usuarios</a></li>
 														</ul
-											</li>';
+											</li>
+											<li class"dropdown">
+															<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestionar Camiones</a>
+																<ul class="dropdown-menu">
+																	<li><a href="agregarcamion.php">Agregar Camion</a></li>
+																	<li><a href="eliminarcamion.php">Eliminar Camion</a></li>
+																	</ul
+														</li>';
+									}
+									echo '<li class"dropdown">
+													<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestionar Bodega</a>
+														<ul class="dropdown-menu">
+															<li><a href="veritems.php">Ver Items</a></li>
+															<li><a href="crearsolicitudrepuesto.php">Crear Solicitud Repuesto</a></li>
+															</ul
+												</li>';
+
 							}
 						?>
           </ul>
