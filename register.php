@@ -133,7 +133,7 @@
 
 	            <div class="form-group">
 	            	<div class="input-group">
-	                <span class="input-group-addon"><span class="glyphicon glyphicon-flashe"></span></span>
+	                <span class="input-group-addon"><span class="glyphicon glyphicon-flash"></span></span>
 	            	<input type="email" name="email" class="form-control" novalidate="true" placeholder="Ingresar RUT sin puntos ni guión" maxlength="40" value="<?php echo $email ?>" />
 	                </div>
 									<span class="text-danger"><?php echo $mailError; ?></span>
