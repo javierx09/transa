@@ -134,7 +134,7 @@
 	            <div class="form-group">
 	            	<div class="input-group">
 	                <span class="input-group-addon"><span class="glyphicon glyphicon-flash"></span></span>
-	            	<input type="email" name="email" class="form-control" novalidate placeholder="Ingresar RUT sin puntos ni guión" maxlength="40" value="<?php echo $email ?>" />
+	            	<input type="email" name="email" class="form-control" formnovalidate placeholder="Ingresar RUT sin puntos ni guión" maxlength="40" value="<?php echo $email ?>" />
 	                </div>
 									<span class="text-danger"><?php echo $mailError; ?></span>
 	            </div>
@@ -155,7 +155,6 @@
 									<option value="2">ADMINISTRADOR</option>
 								</select>
 								</div>
-									<span class="text-danger"><?php echo $passError; ?></span>
 							</div>
 
 	            <div class="form-group">
