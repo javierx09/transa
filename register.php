@@ -39,8 +39,8 @@
 
 			//basic email validation
 			if ( !filter_var($email,FILTER_VALIDATE_EMAIL) ) {
-				$error = false;
-				$emailError = "Please enter valid email address.";
+			//	$error = false;
+			//	$emailError = "Please enter valid email address.";
 			} else {
 				// check email exist or not
 				$query = "SELECT userEmail FROM users WHERE userEmail='$email'";
@@ -89,7 +89,7 @@
 	<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Coding Cage - Login & Registration System</title>
+	<title>Sistema de registro</title>
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	</head>
@@ -134,7 +134,7 @@
 	            <div class="form-group">
 	            	<div class="input-group">
 	                <span class="input-group-addon"><span class="glyphicon glyphicon-flash"></span></span>
-	            	<input type="email" name="email" class="form-control" placeholder="Ingresar RUT sin puntos ni guión" maxlength="40" value="<?php echo $email ?>" pattern="[1-9]{9}"/>
+	            	<input type="text" name="email" class="form-control" placeholder="Ingresar RUT sin puntos ni guión" maxlength="40" pattern="[1-9]{9}"/>
 	                </div>
 									<span class="text-danger"><?php echo $mailError; ?></span>
 	            </div>
