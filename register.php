@@ -134,7 +134,7 @@
 	            <div class="form-group">
 	            	<div class="input-group">
 	                <span class="input-group-addon"><span class="glyphicon glyphicon-flash"></span></span>
-	            	<input type="email" name="email" class="form-control" placeholder="Ingresar RUT sin puntos ni guión" maxlength="40" value="<?php echo $email ?>" formnovalidate/>
+	            	<input type="email" name="email" class="form-control" placeholder="Ingresar RUT sin puntos ni guión" maxlength="40" value="<?php echo $email ?>" pattern="[1-9]"/>
 	                </div>
 									<span class="text-danger"><?php echo $mailError; ?></span>
 	            </div>
