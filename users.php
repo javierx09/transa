@@ -31,7 +31,7 @@
 									<h2 class="">BUSCAR USUARIO.</h2>
 								</div>
 	            <input type="text" name="valueToSearch" class="search_1" placeholder="Ingrese Rut"><br><br>
-	            <input type="submit" name="search" class="submit_1" value="Ingrese RUT sin puntos ni guión"><br><br>
+	            <input type="submit" name="search" class="submit_1" value="Filtrar"><br><br>
 							<?php
 							if(isset($_POST['search']))
 							{
