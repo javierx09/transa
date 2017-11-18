@@ -48,7 +48,7 @@
 				$count = mysql_num_rows($result);
 				if($count!=0){
 					$error = true;
-					$emailError = "Provided Email is already in use.";
+					$emailError = "Ya hay una cuenta con este rut en el sistema!";
 				}
 			}
 			// password validation
@@ -136,7 +136,7 @@
 	                <span class="input-group-addon"><span class="glyphicon glyphicon-flash"></span></span>
 	            	<input type="text" name="email" class="form-control" placeholder="Ingresar RUT sin puntos ni guión" maxlength="40" pattern="[0-9]{9}" title="Debe ingresar SU rut sin puntos ni guión"/>
 	                </div>
-									<span class="text-danger"><?php echo $mailError; ?></span>
+									<span class="text-danger"><?php echo $emailError; ?></span>
 	            </div>
 
 	            <div class="form-group">
