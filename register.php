@@ -66,7 +66,7 @@
 			// if there's no error, continue to signup
 			if( !$error ) {
 
-				$query = "INSERT INTO users (userName,userId,userPass,TIPO) VALUES('$name','$email','$password','$tipo')";
+				$query = "INSERT INTO users (userName,userId,userPass,TIPO) VALUES ('$name','$email','$password','$tipo');";
 				$res = mysql_query($query);
 
 				if ($res) {
