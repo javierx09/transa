@@ -23,9 +23,9 @@
 		$pass = htmlspecialchars($pass);
 		// prevent sql injections / clear user invalid inputs
 
-		if(empty($email)){
+		if(empty($id)){
 			$error = true;
-			$emailError = "Por favor ingresa tu Rut .";
+			$idError = "Por favor ingresa tu Rut .";
 		} else if ( !filter_var($email,FILTER_VALIDATE_EMAIL) ) {
 			$error = true;
 			$emailError = "Acuerdate que tu rut debe ir SIN puntos ni guión.";
