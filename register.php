@@ -38,10 +38,10 @@
 			}
 
 			//basic email validation
-			if ( !filter_var($email,FILTER_VALIDATE_EMAIL) ) {
+			if (!filter_var($email,FILTER_VALIDATE_EMAIL) ) {
 			//	$error = false;
 			//	$emailError = "Please enter valid email address.";
-			} else {
+
 				// check email exist or not
 				$query = "SELECT userId FROM users WHERE userId='$email'";
 				$result = mysql_query($query);
@@ -50,7 +50,7 @@
 					$error = true;
 					$emailError = "Provided Email is already in use.";
 				}
-			}
+
 			// password validation
 			if (empty($pass)){
 				$error = true;
@@ -134,7 +134,7 @@
 	            <div class="form-group">
 	            	<div class="input-group">
 	                <span class="input-group-addon"><span class="glyphicon glyphicon-flash"></span></span>
-	            	<input type="text" name="email" class="form-control" placeholder="Ingresar RUT sin puntos ni guión" maxlength="40" pattern="[1-9]{9}" title="Debe ingresar SU rut sin puntos ni guión"/>
+	            	<input type="text" name="email" class="form-control" placeholder="Ingresar RUT sin puntos ni guión" maxlength="40" pattern="[0-9]{9}" title="Debe ingresar SU rut sin puntos ni guión"/>
 	                </div>
 									<span class="text-danger"><?php echo $mailError; ?></span>
 	            </div>
