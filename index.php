@@ -26,9 +26,6 @@
 		if(empty($id)){
 			$error = true;
 			$idError = "Por favor ingresa tu Rut .";
-		} else if ( !filter_var($email,FILTER_VALIDATE_EMAIL) ) {
-			$error = true;
-			$emailError = "Acuerdate que tu rut debe ir SIN puntos ni guión.";
 		}
 
 		if(empty($pass)){
