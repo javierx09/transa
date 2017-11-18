@@ -41,6 +41,13 @@
 																	<li><a href="agregarcamion.php">Agregar Camion</a></li>
 																	<li><a href="eliminarcamion.php">Eliminar Camion</a></li>
 																	</ul
+														</li>
+											<li class"dropdown">
+															<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestionar Finanzas</a>
+																<ul class="dropdown-menu">
+																	 <li><a href="agregarcamion.php">Finanzas_funcion</a></li>
+																	 <li><a href="eliminarcamion.php">Finanzas_funcion2</a></li>
+																</ul
 														</li>';
 									}
 									echo '<li class"dropdown">
