@@ -43,7 +43,7 @@
 			//	$emailError = "Please enter valid email address.";
 			} else {
 				// check email exist or not
-				$query = "SELECT userEmail FROM users WHERE userEmail='$email'";
+				$query = "SELECT userId FROM users WHERE userId='$email'";
 				$result = mysql_query($query);
 				$count = mysql_num_rows($result);
 				if($count!=0){
@@ -134,7 +134,7 @@
 	            <div class="form-group">
 	            	<div class="input-group">
 	                <span class="input-group-addon"><span class="glyphicon glyphicon-flash"></span></span>
-	            	<input type="email" name="email" class="form-control" placeholder="Ingresar RUT sin puntos ni guión" maxlength="40" pattern="[1-9]{9}" title="Debe ingresar SU rut sin puntos ni guión"/>
+	            	<input type="text" name="email" class="form-control" placeholder="Ingresar RUT sin puntos ni guión" maxlength="40" pattern="[1-9]{9}" title="Debe ingresar SU rut sin puntos ni guión"/>
 	                </div>
 									<span class="text-danger"><?php echo $mailError; ?></span>
 	            </div>
