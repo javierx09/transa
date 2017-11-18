@@ -14,9 +14,9 @@
 	if( isset($_POST['btn-login']) ) {
 
 		// prevent sql injections/ clear user invalid inputs
-		$email = trim($_POST['email']);
-		$email = strip_tags($email);
-		$email = htmlspecialchars($email);
+		$id = trim($_POST['id']);
+		$id = strip_tags($id);
+		$id = htmlspecialchars($id);
 
 		$pass = trim($_POST['pass']);
 		$pass = strip_tags($pass);
@@ -25,15 +25,15 @@
 
 		if(empty($email)){
 			$error = true;
-			$emailError = "Please enter your email address.";
+			$emailError = "Por favor ingresa tu Rut .";
 		} else if ( !filter_var($email,FILTER_VALIDATE_EMAIL) ) {
 			$error = true;
-			$emailError = "Please enter valid email address.";
+			$emailError = "Acuerdate que tu rut debe ir SIN puntos ni guión.";
 		}
 
 		if(empty($pass)){
 			$error = true;
-			$passError = "Please enter your password.";
+			$passError = "Por favor Ingresa tu contraseña.";
 		}
 
 		// if there's no error, continue to login
@@ -41,7 +41,7 @@
 
 			$password = hash('sha256', $pass); // password hashing using SHA256
 
-			$res=mysql_query("SELECT userId, userName, userPass, TIPO FROM users WHERE userEmail='$email'");
+			$res=mysql_query("SELECT userId, userName, userPass, TIPO FROM users WHERE userId='$id'");
 			$row=mysql_fetch_array($res);
 			$count = mysql_num_rows($res); // if uname/pass correct it returns must be 1 row
 
@@ -50,7 +50,7 @@
 				$_SESSION['tipo'] = $row['TIPO'];
 				header("Location: home.php");
 			} else {
-				$errMSG = "Incorrect Credentials, Try again...";
+				$errMSG = "Rut o contraseña incorrectos, intenta de nuevo...";
 			}
 
 		}
@@ -97,7 +97,7 @@
             <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-flash"></span></span>
-            	<input type="email" name="email" class="form-control" placeholder="Ingrese RUT sin puntos ni guión" value="<?php echo $email; ?>" maxlength="40" />
+            	<input type="text" name="id" class="form-control" placeholder="Ingrese RUT sin puntos ni guión" value="<?php echo $email; ?>" maxlength="40" pattern="[0-9]{9}"/>
                 </div>
                 <span class="text-danger"><?php echo $emailError; ?></span>
             </div>

@@ -13,9 +13,9 @@
 			$name = strip_tags($name);
 			$name = htmlspecialchars($name);
 
-			$email = trim($_POST['email']);
-			$email = strip_tags($email);
-			$email = htmlspecialchars($email);
+			$id = trim($_POST['id']);
+			$id = strip_tags($id);
+			$id = htmlspecialchars($id);
 
 			$pass = trim($_POST['pass']);
 			$pass = strip_tags($pass);
@@ -37,17 +37,17 @@
 				$nameError = "Name must contain alphabets and space.";
 			}
 
-			//basic email validation
-			if ( !filter_var($email,FILTER_VALIDATE_EMAIL) ) {
-			 $error = false;
-			 $emailError = "Please enter valid email address.";
+			//basic id validation
+			if ( !filter_var($id,FILTER_VALIDATE_EMAIL) ) {
+			  //$error = false;
+			  //$emailError = "Please enter valid email address.";
 				// check email exist or not
-				$query = "SELECT userId FROM users WHERE userId='$email'";
+				$query = "SELECT userId FROM users WHERE userId='$id'";
 				$result = mysql_query($query);
 				$count = mysql_num_rows($result);
 				if($count!=0){
 					$error = true;
-					$emailError = "Ya hay una cuenta con este rut en el sistema!";
+					$idError = "Ya hay una cuenta con este rut en el sistema!";
 				}
 			}
 			// password validation
@@ -65,14 +65,14 @@
 			// if there's no error, continue to signup
 			if( !$error ) {
 
-				$query = "INSERT INTO users(userName,userId,userPass,TIPO) VALUES('$name','$email','$password','$tipo')";
+				$query = "INSERT INTO users(userName,userId,userPass,TIPO) VALUES('$name','$id','$password','$tipo')";
 				$res = mysql_query($query);
 
 				if ($res) {
 					$errTyp = "success";
 					$errMSG = "Successfully registered, you may login now";
 					unset($name);
-					unset($email);
+					unset($id);
 					unset($pass);
 				} else {
 					$errTyp = "danger";
@@ -133,9 +133,9 @@
 	            <div class="form-group">
 	            	<div class="input-group">
 	                <span class="input-group-addon"><span class="glyphicon glyphicon-flash"></span></span>
-	            	<input type="text" name="email" class="form-control" placeholder="Ingresar RUT sin puntos ni guión" maxlength="40" pattern="[0-9]{9}" title="Debe ingresar SU rut sin puntos ni guión"/>
+	            	<input type="text" name="id" class="form-control" placeholder="Ingresar RUT sin puntos ni guión" maxlength="40" pattern="[0-9]{9}" title="Debe ingresar SU rut sin puntos ni guión"/>
 	                </div>
-									<span class="text-danger"><?php echo $emailError; ?></span>
+									<span class="text-danger"><?php echo $idError; ?></span>
 	            </div>
 
 	            <div class="form-group">
