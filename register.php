@@ -41,7 +41,6 @@
 			if (!filter_var($email,FILTER_VALIDATE_EMAIL) ) {
 			//	$error = false;
 			//	$emailError = "Please enter valid email address.";
-
 				// check email exist or not
 				$query = "SELECT userId FROM users WHERE userId='$email'";
 				$result = mysql_query($query);
@@ -50,7 +49,7 @@
 					$error = true;
 					$emailError = "Provided Email is already in use.";
 				}
-
+			}
 			// password validation
 			if (empty($pass)){
 				$error = true;
