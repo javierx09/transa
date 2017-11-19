@@ -8,7 +8,8 @@ $(function(){ //Add, Save, Edit and Delete functions code
 
  function Add(){
    $("#tblData tbody").append(
-     "<tr>"+ "<td><input type='text'/></td>"+
+     "<tr>"+
+     "<td><input type='text'/></td>"+
      "<td><input type='text'/></td>"+
      "<td><input type='text'/></td>"+
      "<td><img src='images/disk.png' class='btnSave'><img src='images/delete.png' class='btnDelete'/></td>"+
@@ -46,5 +47,3 @@ $(function(){ //Add, Save, Edit and Delete functions code
          function Delete(){
            var par = $(this).parent().parent(); //tr
            par.remove(); };
-
-      
