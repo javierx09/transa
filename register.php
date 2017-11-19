@@ -70,21 +70,19 @@
 
 				if ($res) {
 					$errTyp = "success";
-					$errMSG = "Usuario creado de forma correcta, ahora puedes Ingresar al sistema";
+					$errMSG = "Usuario creado de forma correcta!";
 					unset($name);
 					unset($id);
 					unset($pass);
+					header("Location: index.php");
 				} else {
 					$errTyp = "danger";
-					$errMSG = "Something went wrong, try again later...";
+					$errMSG = "Hubo un problema, intente de nuevo...";
 				}
 
 			}
 
 
-		}
-		if ( isset($_POST['btn-signup']) ) {
-				header("Location: index.php");
 		}
 	?>
 	<!DOCTYPE html>
