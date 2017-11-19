@@ -163,8 +163,7 @@
 	            <div class="form-group">
 	            	<button type="submit" class="btn btn-block btn-primary" name="btn-signup">Registrar Usuario</button>
 	            </div>
-							<?php 				sleep(3);
-											header("Location: index.php"); ?>
+
 
 	            <div class="form-group">
 	            	<hr />
@@ -180,6 +179,8 @@
 
 	</body>
 	</html>
+	<?php 				sleep(3);
+					header("Location: index.php"); ?>
 	<?php ob_end_flush();
 	}else{
 		header("Location: home.php");
