@@ -28,13 +28,13 @@
 			// basic name validation
 			if (empty($name)) {
 				$error = true;
-				$nameError = "Please enter your full name.";
+				$nameError = "Por favor ingrese su nombre";
 			} else if (strlen($name) < 3) {
 				$error = true;
-				$nameError = "Name must have atleat 3 characters.";
+				$nameError = "Su nombre debe tener al menos 3 letras.";
 			} else if (!preg_match("/^[a-zA-Z ]+$/",$name)) {
 				$error = true;
-				$nameError = "Name must contain alphabets and space.";
+				$nameError = "intente de nuevo";
 			}
 
 			//basic id validation
@@ -74,13 +74,12 @@
 					unset($name);
 					unset($id);
 					unset($pass);
-					//sleep(3);
-					//header("Location: index.php");
 				} else {
 					$errTyp = "danger";
 					$errMSG = "Hubo un problema, intente de nuevo...";
 				}
-
+				sleep(3);
+				header("Location: index.php");
 			}
 
 
