@@ -76,11 +76,17 @@
 											</tr>
 						<!-- populate table from mysql database -->
 											<?php while($row = mysql_fetch_array($search_result)):?>
+																								<thead>
 											<tr>
+
 													<td><?php echo $row['userId'];?></td>
 													<td><?php echo $row['userName'];?></td>
 													<td><?php if(($row['TIPO'])==2){echo 'Administrador';}else{echo 'Operario';}?></td>
+
 											</tr>
+												</thead>
+												<tbody>
+												</tbody>
 											<?php endwhile;?>
 									</table>
 									</body>
