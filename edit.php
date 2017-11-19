@@ -55,7 +55,12 @@
 		</form>
 			<?php
 	}
+	if( isset($_GET['edit4']) )
 
+	{
+		$id = $_GET['edit4'];
+		$res= mysql_query("DELETE * FROM users WHERE userId='$id'");or die("Could not update".mysql_error()); echo "<meta http-equiv='refresh' content='0;url=users.php'>";
+	}
 	if(isset($_POST['newsomething']))
 	{
 		$newsomething = $_POST['newsomething'];

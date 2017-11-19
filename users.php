@@ -74,6 +74,7 @@
 													<th>Rut</th>
 													<th>Nombre</th>
 													<th>Tipo</th>
+													<th></th>
 											</tr>
 
 											<?php while($row = mysql_fetch_array($search_result)):?>
@@ -81,7 +82,7 @@
 													<td><?php echo "$row[userId]<a href='edit.php?edit1=$row[userId]'> |editar| <br />";?></td>
 													<td><?php echo "$row[userName]<a href='edit.php?edit2=$row[userName]'> |editar| <br />";?></td>
 													<td><?php if(($row['TIPO'])==2){echo "Administrador<a href='edit.php?edit3=$row[userId]'> |editar| <br />";}else{echo "Supervisor<a href='edit.php?edit3=$row[userId]'> |editar| <br />";}?></td>
-
+                          <td><span class="input-group-addon"><span class="glyphicon glyphicon-erase"></span></span><input type="submit" value="eliminar "/><a href='edit.php?edit4=<?php$row[userId]?>'></td>
 											</tr>
 
 											<?php endwhile;?>
