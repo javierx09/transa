@@ -74,7 +74,7 @@
 													<th>Rut</th>
 													<th>Nombre</th>
 													<th>Tipo</th>
-													<th>Eliminar</th>
+													<th>     Eliminar</th>
 											</tr>
 
 											<?php while($row = mysql_fetch_array($search_result)):?>
