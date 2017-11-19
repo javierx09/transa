@@ -69,7 +69,7 @@
 					unset($descripcion);
 				} else {
 					$errTyp = "danger";
-					$errMSG = "Hubo un problema, intente de nuevo...";
+					$errMSG = "Hubo un problema, intente de nuevo...".$patente.$año.$descripcion;
 				}
 			}
 
@@ -108,7 +108,7 @@
 					?>
 					<div class="form-group">
 	            	<div class="alert alert-<?php echo ($errTyp=="success") ? "success" : $errTyp; ?>">
-					<span class="glyphicon glyphicon-info-sign"></span><?php echo'$errMSG'; ?>
+					<span class="glyphicon glyphicon-info-sign"></span><?php echo $errMSG; ?>
 	                </div>
 	            	</div>
 	                <?php
