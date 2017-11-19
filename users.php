@@ -22,6 +22,8 @@
 	<title>Buscar Usuario</title>
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />
 	<link rel="stylesheet" href="style.css" type="text/css" />
+	<script src="assets/jquery-1.11.3-jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -65,7 +67,7 @@
 										<link rel="stylesheet" href="style.css" type="text/css" />
 									</head>
 									<body>
-									<table>
+									<table id="tblData">
 											<tr>
 													<th>Rut</th>
 													<th>Nombre</th>
