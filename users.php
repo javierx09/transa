@@ -78,7 +78,7 @@
 						<!-- populate table from mysql database -->
 										</thead>
  											<tbody id="_editable_table">
-											<?php while($res = mysql_fetch_array($search_result)):?>
+											<?php <?php foreach($search_result as $res) :?>
 											<tr data-row-id="<?php echo $res['id'];?>">
 													<td class="editable-col" contenteditable="true" col-index='0' oldVal ="<?php echo $res['userId'];?></td>
 													<td class="editable-col" contenteditable="true" col-index='1' oldVal ="<?php echo $res['userName'];?></td>
@@ -86,7 +86,7 @@
 
 											</tr>
 
-											<?php endwhile;?>
+											    <?php endforeach;?>
 											   </tbody>
 									</table>
 									</body>
