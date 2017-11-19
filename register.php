@@ -78,8 +78,6 @@
 					$errTyp = "danger";
 					$errMSG = "Hubo un problema, intente de nuevo...";
 				}
-				sleep(3);
-				header("Location: index.php");
 			}
 
 
@@ -165,6 +163,8 @@
 	            <div class="form-group">
 	            	<button type="submit" class="btn btn-block btn-primary" name="btn-signup">Registrar Usuario</button>
 	            </div>
+							<?php 				sleep(3);
+											header("Location: index.php"); ?>
 
 	            <div class="form-group">
 	            	<hr />
