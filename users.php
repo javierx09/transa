@@ -69,7 +69,7 @@
 										<link rel="stylesheet" href="style.css" type="text/css" />
 									</head>
 									<body>
-									<table id="employee_grid" class="table table-condensed table-hover table-striped bootgrid-table" width="60%" cellspacing="50">
+									<table id="employee_grid" class="table table-condensed table-hover table-striped bootgrid-table" width="60%" cellspacing="350">
 											<tr>
 													<th>Rut</th>
 													<th>Nombre</th>
