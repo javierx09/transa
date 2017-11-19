@@ -108,7 +108,7 @@
 					?>
 					<div class="form-group">
 	            	<div class="alert alert-<?php echo ($errTyp=="success") ? "success" : $errTyp; ?>">
-					<span class="glyphicon glyphicon-info-sign"></span> <?php echo $errMSG; sleep(3);header("Location: index.php"); ?>
+					<span class="glyphicon glyphicon-info-sign"></span>
 	                </div>
 	            	</div>
 	                <?php
