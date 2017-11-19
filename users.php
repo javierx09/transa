@@ -39,7 +39,9 @@
 							<?php
 							if(isset($_POST['search']))
 							{
-									$valueToSearch = $_POST['valueToSearch'];
+									$valueToSearch = trim($_POST['valueToSearch']);
+									$valueToSearch = strip_tags($valueToSearch);
+									$valueToSearch = htmlspecialchars($valueToSearch);
 									// search in all table columns
 									// using concat mysql function
 									$query = "SELECT * FROM users WHERE CONCAT(userId, userName, TIPO) LIKE '%".$valueToSearch."%'";

@@ -7,8 +7,6 @@
 		$error = false;
 
 		if ( isset($_POST['btn-signup']) ) {
-
-			// clean user inputs to prevent sql injections
 			$name = trim($_POST['name']);
 			$name = strip_tags($name);
 			$name = htmlspecialchars($name);
