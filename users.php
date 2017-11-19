@@ -56,7 +56,7 @@
 									}
 
 									th, td {
-    								padding: 8px;
+    								padding: 40px;
     								text-align: left;
     								border-bottom: 1px solid #ddd;
 									}
@@ -69,7 +69,7 @@
 										<link rel="stylesheet" href="style.css" type="text/css" />
 									</head>
 									<body>
-									<table id="employee_grid" class="table table-condensed table-hover table-striped bootgrid-table" width="60%" cellspacing="350">
+									<table id="employee_grid" class="table table-condensed table-hover table-striped bootgrid-table" width="60%" cellspacing="0">
 											<tr>
 													<th>Rut</th>
 													<th>Nombre</th>
