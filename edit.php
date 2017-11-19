@@ -51,10 +51,10 @@
 
 	if(isset($_POST['newsomething']))
 	{
-		$newName = $_POST['newsomething'];
+		$newsomething = $_POST['newsomething'];
 		$id  	 = $_POST['id'];
 		$tipo  = $_POST['tipo'];
-		$sql     = "UPDATE users SET '$tipo'='$newsomething' WHERE '$userId'='$id'";
+		$sql     = "UPDATE users SET '$tipo'='$newsomething' WHERE userId='$id'";
 		$res 	 = mysql_query($sql)
                                     or die("Could not update".mysql_error());
 		echo "<meta http-equiv='refresh' content='0;url=users.php'>";
