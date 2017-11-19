@@ -58,7 +58,7 @@
 			// if there's no error, continue to signup
 			if( !$error ) {
 
-				$query = "INSERT INTO camiones(patente,año,descripcion) VALUES('$patente',$año,'$descripcion')";
+				$query = "INSERT INTO camiones(patente,año,descripcion) VALUES('$patente','$año','$descripcion')";
 				$res = mysql_query($query);
 
 				if ($res) {
@@ -108,7 +108,7 @@
 					?>
 					<div class="form-group">
 	            	<div class="alert alert-<?php echo ($errTyp=="success") ? "success" : $errTyp; ?>">
-					<span class="glyphicon glyphicon-info-sign"></span><?php echo $errMSG; ?>
+					<span class="glyphicon glyphicon-info-sign"></span><?php echo'$errMSG'; ?>
 	                </div>
 	            	</div>
 	                <?php
@@ -118,7 +118,7 @@
 	            <div class="form-group">
 	            	<div class="input-group">
 	                <span class="input-group-addon"><span class="glyphicon glyphicon-truck"></span></span>
-	            	<input type="text" name="patente" class="form-control" placeholder="Ingresa Patente" pattern="[0-9a-zA-Z]{6,15}" maxlength="15" title="Debe ingresar patente sin espacios ni guiones" />
+	            	<input type="text" name="patente" class="form-control" placeholder="Ingresa Patente" pattern="[0-9a-zA-Z]{6,15}" maxlength="14" title="Debe ingresar patente sin espacios ni guiones" />
 	                </div>
 	                <span class="text-danger"><?php echo $patenteError; ?></span>
 	            </div>
