@@ -6,7 +6,6 @@
 		$id = $_GET['edit1'];
 		$res= mysql_query("SELECT * FROM users WHERE userId='$id'");
 		$row= mysql_fetch_array($res);
-		$tipo=1;
 		?>
 		<form action="edit.php" method="POST">
 		Name: <input type="text" name="newsomething" value="<?php echo $row[0]; ?>"><br />
@@ -24,7 +23,6 @@
 		$id = $_GET['edit2'];
 		$res= mysql_query("SELECT * FROM users WHERE userName='$id'");
 		$row= mysql_fetch_array($res);
-		$tipo=2;
 		?>
 		<form action="edit.php" method="POST">
 		Name: <input type="text" name="newsomething" value="<?php echo $row[1]; ?>"><br />
