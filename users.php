@@ -86,7 +86,8 @@
 
 											<?php while($row = mysql_fetch_array($search_result)):?>
 											<tr>
-													<td><?php echo'$row[userId] <a href='edit.php?edit=$row[id]'>edit<br />';?></td>
+													<td><?php 	  echo "$row[id]. $row[name]
+                <a href='edit.php?edit=$row[id]'>edit<br />";?></td>
 													<td><?php echo $row['userName'];?><a href='edit.php?edit=<?php$row[userName]?>'>edit<br /></td>
 													<td><?php if(($row['TIPO'])==2){echo 'Administrador';}else{echo 'Operario';}?><a href='edit.php?edit=<?php$row[userId]?>'>edit<br /></td>
 
