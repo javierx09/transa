@@ -74,8 +74,8 @@
 					unset($name);
 					unset($id);
 					unset($pass);
-					sleep(3);
-					header("Location: index.php");
+					//sleep(3);
+					//header("Location: index.php");
 				} else {
 					$errTyp = "danger";
 					$errMSG = "Hubo un problema, intente de nuevo...";
