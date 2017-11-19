@@ -23,7 +23,7 @@
 			if (empty($patente)) {
 				$error = true;
 				$patenteError = "Por favor ingrese una patente";
-			} else if (strlen($name) < 5) {
+			} else if (strlen($patente) < 6) {
 				$error = true;
 				$patenteError = "La patente debe contener al menos 6 caracteres ";
 			} else if (!preg_match("/^[a-zA-Z0-9]+$/",$patente)) {
@@ -48,7 +48,7 @@
 			if (empty($año)){
 				$error = true;
 				$año = "Por favor ingresa el año del camión";
-			} else if(strlen($pass) < 3) {
+			} else if(strlen($año) < 4) {
 				$error = true;
 				$añoError = "el año debe ser de cuatro digitos, por ejemplo: 2010";
 			}
