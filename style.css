@@ -86,7 +86,7 @@ cursor:pointer;
 .search_1:focus{
 outline:0;
 }
-a.botoncito {
+a.button {
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
