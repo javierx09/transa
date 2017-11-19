@@ -41,7 +41,10 @@
 		$row= mysql_fetch_array($res);
 		?>
 		<form action="edit.php" method="POST">
-		Name: <input type="text" name="newsomething" value="<?php echo $row[2]; ?>"><br />
+		Tipo: <select class="form-control" name="newsomething">
+						<option value="1">SUPERVISOR</option>
+						<option value="2">ADMINISTRADOR</option>
+					</select>
 		<input type="hidden" name="id" value="<?php echo $row[0]; ?>">
 		<input type="hidden" name="tipo" value="TIPO">
 		<input type="submit" value=" Update "/>
