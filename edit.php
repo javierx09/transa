@@ -4,7 +4,7 @@
 	if( isset($_GET['edit']) )
 	{
 		$id = $_GET['edit'];
-		$res= mysql_query("SELECT * FROM users WHERE $id='$id'");
+		$res= mysql_query("SELECT * FROM users WHERE userName='$id'");
 		$row= mysql_fetch_array($res);
 	}
 
