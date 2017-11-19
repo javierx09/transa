@@ -74,7 +74,16 @@
 					unset($name);
 					unset($id);
 					unset($pass);
-					header("Location: index.php");
+					?>
+					<script>
+					var content = document.getElementById("irahome");
+					content.style.display="none";
+					setTimeout(function(){
+						content.style.display="block";
+					}, 2500);
+					</script>
+					<div id="irahome"><?php header("Location: index.php");?>  </div>
+					<?php
 				} else {
 					$errTyp = "danger";
 					$errMSG = "Hubo un problema, intente de nuevo...";
@@ -84,6 +93,7 @@
 
 
 		}
+
 	?>
 	<!DOCTYPE html>
 	<html>
