@@ -15,7 +15,7 @@
 			$año = strip_tags($año);
 			$año = htmlspecialchars($año);
 
-			$descripcion = strip_tags($_POST['descripcion');
+			$descripcion = strip_tags($_POST['descripcion']);
 			$descripcion = htmlspecialchars($descripcion);
 
 
