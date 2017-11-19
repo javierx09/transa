@@ -80,7 +80,7 @@
 					content.style.display="none";
 					setTimeout(function(){
 						content.style.display="block";
-					}, 2500);
+					}, 6000);
 					</script>
 					<div id="irahome"><?php header("Location: index.php");?>  </div>
 					<?php
@@ -174,9 +174,6 @@
 	            <div class="form-group">
 	            	<button type="submit" class="btn btn-block btn-primary" name="btn-signup">Registrar Usuario</button>
 	            </div>
-							<div class="form-group">
-								<button type="submit" class="btn btn-block btn-primary" name="btn-sigin">Ingresar al sistema</button>
-							</div>
 
 	            <div class="form-group">
 	            	<hr />
