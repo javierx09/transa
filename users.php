@@ -29,7 +29,7 @@
 	</head>
 	<body>
 		<div class="container">
-				<div id="list-form">
+				<div id="login-form">
 	        <form action="users.php" method="POST">
 							<div class="form-group">
 									<h2 class="">BUSCAR USUARIO.</h2>
