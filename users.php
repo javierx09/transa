@@ -57,9 +57,9 @@
 
 									th, td {
     								padding: 8px;
+										spacing: 50px;
     								text-align: left;
     								border-bottom: 1px solid #ddd;
-										border-spacing: 40px;
 									}
 
 									tr:hover{background-color:#f5f5f5}
