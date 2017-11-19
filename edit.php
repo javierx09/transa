@@ -19,8 +19,10 @@
  }
 
 ?>
+<html>
 <form action="edit.php" method="POST">
 Name: <input type="text" name="newName" value="<?php echo $row[1]; ?/>"><br />
 <input type="hidden" name="id" value="<?php echo $row[0]; ?/>">
 <input type="submit" value=" Update "/>
 </form>
+</html>
