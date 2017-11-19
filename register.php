@@ -115,7 +115,7 @@
 					?>
 					<div class="form-group">
 	            	<div class="alert alert-<?php echo ($errTyp=="success") ? "success" : $errTyp; ?>">
-					<span class="glyphicon glyphicon-info-sign"></span> <?php echo $errMSG; ?>
+					<span class="glyphicon glyphicon-info-sign"></span> <?php echo $errMSG; sleep(3);header("Location: index.php"); ?>
 	                </div>
 	            	</div>
 	                <?php
@@ -179,8 +179,7 @@
 
 	</body>
 	</html>
-	<?php 				sleep(3);
-					header("Location: index.php"); ?>
+
 	<?php ob_end_flush();
 	}else{
 		header("Location: home.php");
