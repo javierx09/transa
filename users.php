@@ -9,6 +9,15 @@
 		    $filter_Result = mysql_query($query) or die("Error en: $query: " . mysql_error());;
 		    return $filter_Result;
 		}
+		if(isset($_POST['valueToSearch']))
+		{
+		  $name = $_POST['valueToSearch'];
+
+		  if(mysql_query("INSERT INTO users(userName) VALUES('$name')"))
+			echo "Successful Insertion!";
+		  else
+			echo "Please try again";
+		}
 
 
 	// function to connect and execute the query
@@ -29,7 +38,7 @@
 	<body>
 		<div class="container">
 				<div id="login-form">
-	        <form action="users.php" class="searchbox_1" method="post">
+	        <form action="users.php" class="searchbox_1" method="POST">
 							<div class="form-group">
 									<h2 class="">BUSCAR USUARIO.</h2>
 								</div>
@@ -69,25 +78,21 @@
 									</head>
 									<body>
 									<table id="employee_grid" class="table table-condensed table-hover table-striped bootgrid-table" width="60%" cellspacing="0">
-										<thead>
 											<tr>
 													<th>Rut</th>
 													<th>Nombre</th>
 													<th>Tipo</th>
 											</tr>
-						<!-- populate table from mysql database -->
-										</thead>
- 											<tbody id="_editable_table">
-											<?php foreach(mysql_fetch_array($search_result) as $res) :?>
-											<tr data-row-id="<?php echo $res['userId'];?>">
-													<td class="editable-col" contenteditable="true" col-index='0' oldVal ="<?php echo $res['userId'];?></td>
-													<td class="editable-col" contenteditable="true" col-index='1' oldVal ="<?php echo $res['userName'];?></td>
-													<td class="editable-col" contenteditable="true" col-index='2' oldVal ="<?php if(($res['TIPO'])==2){echo 'Administrador';}else{echo 'Operario';}?></td>
+
+											<?php while($row = mysql_fetch_array($search_result)):?>
+											<tr>
+													<td><?php echo $row['userId'];?><a href='edit.php?edit=<?php$row[userId]?>'>edit<br /></td>
+													<td><?php echo $row['userName'];?><a href='edit.php?edit=<?php$row[userId]?>'>edit<br /></td>
+													<td><?php if(($row['TIPO'])==2){echo 'Administrador';}else{echo 'Operario';}?><a href='edit.php?edit=<?php$row[userId]?>'>edit<br /></td>
 
 											</tr>
 
-											    <?php endforeach;?>
-											   </tbody>
+											<?php endwhile;?>
 									</table>
 									</body>
 									</html>
