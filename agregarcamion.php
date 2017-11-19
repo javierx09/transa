@@ -118,7 +118,7 @@
 	            <div class="form-group">
 	            	<div class="input-group">
 	                <span class="input-group-addon"><span class="glyphicon glyphicon-truck"></span></span>
-	            	<input type="text" name="patente" class="form-control" placeholder="Ingresa Patente" pattern="([0-9a-zA-Z]).{6,}" maxlength="15" title="Debe ingresar patente sin espacios ni guiones" />
+	            	<input type="text" name="patente" class="form-control" placeholder="Ingresa Patente" pattern="[0-9a-zA-Z]{6,15}" maxlength="15" title="Debe ingresar patente sin espacios ni guiones" />
 	                </div>
 	                <span class="text-danger"><?php echo $patenteError; ?></span>
 	            </div>
