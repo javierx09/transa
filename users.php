@@ -79,9 +79,9 @@
 
 											<?php while($row = mysql_fetch_array($search_result)):?>
 											<tr>
-													<td><?php echo "$row[userId]<a href='edit.php?edit1=$row[userId]' class='btn btn-default'> editar </a>";?></td>
-													<td><?php echo "$row[userName]<a href='edit.php?edit2=$row[userName]' class='btn btn-default'> editar </a>";?></td>
-													<td><?php if(($row['TIPO'])==2){echo "Administrador<a href='edit.php?edit3=$row[userId]' class='btn btn-default'> editar </a>";}else{echo "Supervisor<a href='edit.php?edit3=$row[userId]'> |editar| <br />";}?></td>
+													<td><?php echo "$row[userId]  <a href='edit.php?edit1=$row[userId]' class='btn btn-default'> editar </a>";?></td>
+													<td><?php echo "$row[userName]  <a href='edit.php?edit2=$row[userName]' class='btn btn-default'> editar </a>";?></td>
+													<td><?php if(($row['TIPO'])==2){echo "Administrador  <a href='edit.php?edit3=$row[userId]' class='btn btn-default'> editar </a>";}else{echo "Supervisor  <a href='edit.php?edit3=$row[userId]'> |editar| <br />";}?></td>
                           <td><?php echo "<a href='edit.php?edit4=$row[userId]' class='btn btn-default'> Eliminar usuario</a>";?></td>
 											</tr>
 
