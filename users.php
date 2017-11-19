@@ -56,9 +56,10 @@
 									}
 
 									th, td {
-    								padding: 40px;
+    								padding: 8px;
     								text-align: left;
     								border-bottom: 1px solid #ddd;
+										border-spacing: 40px;
 									}
 
 									tr:hover{background-color:#f5f5f5}
