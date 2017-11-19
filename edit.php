@@ -4,7 +4,7 @@
 	if( isset($_GET['edit']) )
 	{
 		$id = $_GET['edit'];
-		$res= mysql_query("SELECT * FROM users WHERE userId='$id'");
+		$res= mysql_query("SELECT * FROM users WHERE userName='$id'");
 		$row= mysql_fetch_array($res);
 	}
 
@@ -12,7 +12,7 @@
 	{
 		$newName = $_POST['newName'];
 		$id  	 = $_POST['id'];
-		$sql     = "UPDATE users SET userName='$newName' WHERE userId='$id'";
+		$sql     = "UPDATE users SET userName='$newName' WHERE userName='$id'";
 		$res 	 = mysql_query($sql)
                                     or die("Could not update".mysql_error());
 		echo "<meta http-equiv='refresh' content='0;url=index.php'>";
