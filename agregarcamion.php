@@ -69,7 +69,7 @@
 					unset($descripcion);
 				} else {
 					$errTyp = "danger";
-					$errMSG = "Hubo un problema, intente de nuevo...".$patente.$año.$descripcion;
+					$errMSG = "Hubo un problema, intente de nuevo...";
 				}
 			}
 
