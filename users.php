@@ -79,7 +79,7 @@
 										</thead>
  											<tbody id="_editable_table">
 											<?php foreach(mysql_fetch_array($search_result) as $res) :?>
-											<tr data-row-id="<?php echo $res['id'];?>">
+											<tr data-row-id="<?php echo $res['userId'];?>">
 													<td class="editable-col" contenteditable="true" col-index='0' oldVal ="<?php echo $res['userId'];?></td>
 													<td class="editable-col" contenteditable="true" col-index='1' oldVal ="<?php echo $res['userName'];?></td>
 													<td class="editable-col" contenteditable="true" col-index='2' oldVal ="<?php if(($res['TIPO'])==2){echo 'Administrador';}else{echo 'Operario';}?></td>
