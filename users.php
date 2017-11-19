@@ -69,12 +69,12 @@
 										<link rel="stylesheet" href="style.css" type="text/css" />
 									</head>
 									<body>
-									<table id="employee_grid" class="table table-condensed table-hover table-striped bootgrid-table" width="60%" cellspacing="0">
+									<table id="employee_grid" class="table table-condensed table-hover table-striped bootgrid-table" width="60%" cellspacing="50">
 											<tr>
 													<th>Rut</th>
 													<th>Nombre</th>
 													<th>Tipo</th>
-													<th>     Eliminar</th>
+													<th>Eliminar</th>
 											</tr>
 
 											<?php while($row = mysql_fetch_array($search_result)):?>
