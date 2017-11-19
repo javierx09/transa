@@ -64,9 +64,9 @@
 				if ($res) {
 					$errTyp = "success";
 					$errMSG = "camion creado de forma correcta!";
-					unset($name);
-					unset($id);
-					unset($pass);
+					unset($patente);
+					unset($año);
+					unset($descripcion);
 				} else {
 					$errTyp = "danger";
 					$errMSG = "Hubo un problema, intente de nuevo...";
@@ -118,7 +118,7 @@
 	            <div class="form-group">
 	            	<div class="input-group">
 	                <span class="input-group-addon"><span class="glyphicon glyphicon-truck"></span></span>
-	            	<input type="text" name="patente" class="form-control" placeholder="Ingresa Patente" pattern="[0-9a-zA-Z]{6,}" maxlength="15" title="Debe ingresar patente sin espacios ni guiones" />
+	            	<input type="text" name="patente" class="form-control" placeholder="Ingresa Patente" pattern="([0-9a-zA-Z]).{6,}" maxlength="15" title="Debe ingresar patente sin espacios ni guiones" />
 	                </div>
 	                <span class="text-danger"><?php echo $patenteError; ?></span>
 	            </div>
@@ -126,7 +126,7 @@
 	            <div class="form-group">
 	            	<div class="input-group">
 	                <span class="input-group-addon"><span class="glyphicon glyphicon-flash"></span></span>
-	            	<input type="text" name="año" class="form-control" placeholder="Ingresar año del vehículo" maxlength="4" pattern="[0-9kK]{4}" title="Debe ingresar el año del camion, ejemplo: 1998"/>
+	            	<input type="text" name="año" class="form-control" placeholder="Ingresar año del vehículo" maxlength="4" pattern="[0-9]{4}" title="Debe ingresar el año del camion, ejemplo: 1998"/>
 	                </div>
 									<span class="text-danger"><?php echo $añoError; ?></span>
 	            </div>

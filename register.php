@@ -72,6 +72,7 @@
 					unset($name);
 					unset($id);
 					unset($pass);
+					unset($tipo);
 				} else {
 					$errTyp = "danger";
 					$errMSG = "Hubo un problema, intente de nuevo...";
