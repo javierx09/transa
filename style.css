@@ -86,3 +86,11 @@ cursor:pointer;
 .search_1:focus{
 outline:0;
 }
+a.botoncito {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
