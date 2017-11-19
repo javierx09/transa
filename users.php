@@ -68,27 +68,26 @@
 										<link rel="stylesheet" href="style.css" type="text/css" />
 									</head>
 									<body>
-									<table id="tblData">
-										<thead>
+									<table>
 											<tr>
 													<th>Rut</th>
 													<th>Nombre</th>
 													<th>Tipo</th>
 											</tr>
-										</thead>
-										<tbody>
-										</tbody>
 						<!-- populate table from mysql database -->
+										</thead>
+ 											<tbody id="_editable_table">
 											<?php while($row = mysql_fetch_array($search_result)):?>
 											<tr>
 
-													<td><?php echo $row['userId'];?></td>
-													<td><?php echo $row['userName'];?></td>
-													<td><?php if(($row['TIPO'])==2){echo 'Administrador';}else{echo 'Operario';}?></td>
+													<td> class="editable-col" contenteditable="true" col-index='0' oldVal ="<?php echo $row['userId'];?></td>
+													<td> class="editable-col" contenteditable="true" col-index='1' oldVal ="<?php echo $row['userName'];?></td>
+													<td> class="editable-col" contenteditable="true" col-index='2' oldVal ="<?php if(($row['TIPO'])==2){echo 'Administrador';}else{echo 'Operario';}?></td>
 
 											</tr>
 
 											<?php endwhile;?>
+											   </tbody>
 									</table>
 									</body>
 									</html>
