@@ -7,6 +7,10 @@
 }
 #login-form {
 	margin:5% auto;
+	max-width:500px;
+}
+#list-form {
+	margin:5% auto;
 	max-width:1000px;
 }
 /* home page */
