@@ -66,5 +66,7 @@
                                     or die("Could not update".mysql_error());
 		echo "<meta http-equiv='refresh' content='0;url=users.php'>";
 	}
+}else{
+	header("Location: home.php");
 }
 ?>

@@ -70,7 +70,7 @@
 
 				if ($res) {
 					$errTyp = "success";
-					$errMSG = "Successfully registered, you may login now";
+					$errMSG = "Usuario creado de forma correcta, ahora puedes Ingresar al sistema";
 					unset($name);
 					unset($id);
 					unset($pass);
@@ -82,6 +82,9 @@
 			}
 
 
+		}
+		if ( isset($_POST['btn-signup']) ) {
+				header("Location: index.php");
 		}
 	?>
 	<!DOCTYPE html>
@@ -163,6 +166,9 @@
 	            <div class="form-group">
 	            	<button type="submit" class="btn btn-block btn-primary" name="btn-signup">Registrar Usuario</button>
 	            </div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-block btn-primary" name="btn-sigin">Ingresar al sistema</button>
+							</div>
 
 	            <div class="form-group">
 	            	<hr />
