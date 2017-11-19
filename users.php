@@ -63,12 +63,13 @@
 									tr:hover{background-color:#f5f5f5}
 									</style>
 										<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-										<title>Coding Cage - Login & Registration System</title>
+										<title>Administrador de usuarios</title>
 										<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />
 										<link rel="stylesheet" href="style.css" type="text/css" />
 									</head>
 									<body>
-									<table>
+									<table id="employee_grid" class="table table-condensed table-hover table-striped bootgrid-table" width="60%" cellspacing="0">
+										<thead>
 											<tr>
 													<th>Rut</th>
 													<th>Nombre</th>
@@ -77,12 +78,11 @@
 						<!-- populate table from mysql database -->
 										</thead>
  											<tbody id="_editable_table">
-											<?php while($row = mysql_fetch_array($search_result)):?>
-											<tr>
-
-													<td> class="editable-col" contenteditable="true" col-index='0' oldVal ="<?php echo $row['userId'];?></td>
-													<td> class="editable-col" contenteditable="true" col-index='1' oldVal ="<?php echo $row['userName'];?></td>
-													<td> class="editable-col" contenteditable="true" col-index='2' oldVal ="<?php if(($row['TIPO'])==2){echo 'Administrador';}else{echo 'Operario';}?></td>
+											<?php while($res = mysql_fetch_array($search_result)):?>
+											<tr data-row-id="<?php echo $res['id'];?>">
+													<td class="editable-col" contenteditable="true" col-index='0' oldVal ="<?php echo $res['userId'];?></td>
+													<td class="editable-col" contenteditable="true" col-index='1' oldVal ="<?php echo $res['userName'];?></td>
+													<td class="editable-col" contenteditable="true" col-index='2' oldVal ="<?php if(($res['TIPO'])==2){echo 'Administrador';}else{echo 'Operario';}?></td>
 
 											</tr>
 
