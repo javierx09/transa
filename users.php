@@ -82,7 +82,7 @@
 													<td><?php echo "$row[userId]<a href='edit.php?edit1=$row[userId]'> |editar| <br />";?></td>
 													<td><?php echo "$row[userName]<a href='edit.php?edit2=$row[userName]'> |editar| <br />";?></td>
 													<td><?php if(($row['TIPO'])==2){echo "Administrador<a href='edit.php?edit3=$row[userId]'> |editar| <br />";}else{echo "Supervisor<a href='edit.php?edit3=$row[userId]'> |editar| <br />";}?></td>
-                          <td><?php echo "<a href='edit.php?edit4=$row[userId]' role="button" > dasd /> ";?></td>
+                          <td><?php echo "<a href='edit.php?edit4=$row[userId]'> dasd /> ";?></td>
 											</tr>
 
 											<?php endwhile;?>
