@@ -1,10 +1,22 @@
 <?php
 	include_once('dbconnect.php');
 
-	if( isset($_GET['edit']) )
+	if( isset($_GET['edit1']) )
 	{
-		$id = $_GET['edit'];
+		$id = $_GET['edit1'];
+		$res= mysql_query("SELECT * FROM users WHERE userId='$id'");
+		$row= mysql_fetch_array($res);
+	}
+	if( isset($_GET['edit2']) )
+	{
+		$id = $_GET['edit2'];
 		$res= mysql_query("SELECT * FROM users WHERE userName='$id'");
+		$row= mysql_fetch_array($res);
+	}
+	if( isset($_GET['edit3']) )
+	{
+		$id = $_GET['edit3'];
+		$res= mysql_query("SELECT * FROM users WHERE TIPO='$id'");
 		$row= mysql_fetch_array($res);
 	}
 
