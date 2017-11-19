@@ -24,6 +24,7 @@
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<script src="assets/jquery-1.11.3-jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="get-text.js"></script>
 	</head>
 	<body>
 		<div class="container">
