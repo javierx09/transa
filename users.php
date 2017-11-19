@@ -9,15 +9,7 @@
 		    $filter_Result = mysql_query($query) or die("Error en: $query: " . mysql_error());;
 		    return $filter_Result;
 		}
-		if(isset($_POST['valueToSearch']))
-		{
-		  $name = $_POST['valueToSearch'];
 
-		  if(mysql_query("INSERT INTO users(userName) VALUES('$name')"))
-			echo "Successful Insertion!";
-		  else
-			echo "Please try again";
-		}
 
 
 	// function to connect and execute the query
