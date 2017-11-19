@@ -1,5 +1,9 @@
 <?php
+	ob_start();
+	session_start();
 	include_once('dbconnect.php');
+	if(isset($_SESSION['user'])!="" && ($_SESSION['tipo'])==2){
+		include_once 'dbconnect.php';
 
 	if( isset($_GET['edit1']) )
 	{
@@ -62,5 +66,5 @@
                                     or die("Could not update".mysql_error());
 		echo "<meta http-equiv='refresh' content='0;url=users.php'>";
 	}
-
+}
 ?>
