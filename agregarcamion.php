@@ -126,7 +126,7 @@
 	            <div class="form-group">
 	            	<div class="input-group">
 	                <span class="input-group-addon"><span class="glyphicon glyphicon-flash"></span></span>
-	            	<input type="text" name="año" class="form-control" placeholder="Ingresar año del vehículo" maxlength="4" pattern="[0-9kK]{9}" title="Debe ingresar SU rut sin puntos ni guión"/>
+	            	<input type="text" name="año" class="form-control" placeholder="Ingresar año del vehículo" maxlength="4" pattern="[0-9kK]{4}" title="Debe ingresar el año del camion, ejemplo: 1998"/>
 	                </div>
 									<span class="text-danger"><?php echo $añoError; ?></span>
 	            </div>
