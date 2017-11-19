@@ -15,10 +15,10 @@
 		<input type="submit" value=" Update "/>
 		</form>
 
-
+					<?php
 
 	}
-			<?php
+
 	if( isset($_GET['edit2']) )
 	{
 		$id = $_GET['edit2'];
@@ -32,8 +32,9 @@
 		<input type="hidden" name="tipo" value="userName">
 		<input type="submit" value=" Update "/>
 		</form>
+				<?php
 	}
-		<?php
+
 	if( isset($_GET['edit3']) )
 
 	{
@@ -47,8 +48,9 @@
 		<input type="hidden" name="tipo" value="TIPO">
 		<input type="submit" value=" Update "/>
 		</form>
+			<?php
 	}
-	<?php
+
 	if(isset($_POST['newsomething']))
 	{
 		$newName = $_POST['newsomething'];
@@ -61,8 +63,3 @@
 	}
 
 ?>
-<form action="edit.php" method="POST">
-Name: <input type="text" name="newsomething" value="<?php echo $row[1]; ?>"><br />
-<input type="hidden" name="id" value="<?php echo $row[0]; ?>">
-<input type="submit" value=" Update "/>
-</form>
