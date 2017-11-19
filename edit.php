@@ -12,7 +12,7 @@
 	{
 		$newName = $_POST['newName'];
 		$id  	 = $_POST['id'];
-		$sql     = "UPDATE users SET $id='$newName' WHERE $id='$id'";
+		$sql     = "UPDATE users SET $id='$newName' WHERE userName='$id'";
 		$res 	 = mysql_query($sql)
                                     or die("Could not update".mysql_error());
 		echo "<meta http-equiv='refresh' content='0;url=index.php'>";
