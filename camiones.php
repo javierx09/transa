@@ -77,6 +77,7 @@
 													<th>Año</th>
 													<th>Descripcion</th>
 													<th>Eliminar</th>
+													<th>Mantenciones</th>
 											</tr>
 
 											<?php while($row = mysql_fetch_array($search_result)):?>
@@ -85,6 +86,7 @@
 													<td><?php echo "$row[ano] <a href='editcamion.php?edit2=$row[patente]' class='btn btn-default'> editar </a>";?></td>
 													<td><?php echo "$row[descripcion] <a href='editcamion.php?edit3=$row[patente]' class='btn btn-default'> editar </a>";?></td>
                           <td><?php echo "<a href='editcamion.php?edit4=$row[patente]' class='btn btn-default'> Eliminar camion</a>";?></td>
+													<td><?php echo "<a href='mantenciones.php?mantenciones=$row[patente]' class='btn btn-default'> Mantenciones</a>";?></td>
 											</tr>
 
 											<?php endwhile;?>
