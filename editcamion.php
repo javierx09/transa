@@ -56,7 +56,7 @@
 
 	{
 		$id = $_GET['edit4'];
-		$res= mysql_query("DELETE FROM camiones WHERE patente='$id'")or die("Could not update".mysql_error()); echo "<meta http-equiv='refresh' content='0;url=users.php'>";
+		$res= mysql_query("DELETE FROM camiones WHERE patente='$id'")or die("Could not update".mysql_error()); echo "<meta http-equiv='refresh' content='0;url=camiones.php'>";
 	}
 	if(isset($_POST['newsomething']))
 	{
