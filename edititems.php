@@ -52,6 +52,19 @@
 		</form>
 				<?php
 	}
+	if( isset($_GET['edit5']) )
+
+	{
+		$id = $_GET['edit5'];
+		?>
+		<form action="edititems.php" method="POST">
+		cantidad a solicitar: <input type="text" name="solicitud"><br />
+		<input type="hidden" name="id" value="<?php echo $row[0]; ?>">
+		<input type="submit" value=" Solicitar "/>
+		</form>
+				<?php
+	}
+
 	if( isset($_GET['edit4']) )
 
 	{
@@ -70,5 +83,19 @@
 	}
 }else{
 	header("Location: home.php");
+}
+if(isset($_POST['solicitud']))
+{
+
+	$solicitud = $_POST['solicitud'];
+	$date = date("D M d, Y G:i");
+	$id  	 = $_POST['id'];
+	$sql     ="INSERT INTO solicitudes(id,fecha,cantidad) VALUES('$id','$date','$solicitud')";
+	$res 	 = mysql_query($sql)
+																	or die("Could not update".mysql_error());
+	echo "<meta http-equiv='refresh' content='0;url=items.php'>";
+}
+}else{
+header("Location: home.php");
 }
 ?>

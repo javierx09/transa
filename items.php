@@ -63,7 +63,7 @@
 															<ul class="dropdown-menu">
 																<li><a href="agregaritem.php">Agregar Item</a></li>
 																<li><a href="items.php">Ver Items</a></li>
-																<li><a href="crearsolicitudrepuesto.php">Crear Solicitud Repuesto</a></li>
+																<li><a href="solicitudes.php">Ver solicitudes de repuesto</a></li>
 																</ul
 													</li>';
 										echo '<li><a href="mantencion.php">Realizar Mantención</a></li>';
@@ -133,6 +133,7 @@
 													<th>Cantidad</th>
 													<th>Valor Unitario</th>
 													<th>Eliminar</th>
+													<th>Solicitud De Repuesto</th>
 											</tr>
 
 											<?php while($row = mysql_fetch_array($search_result)):?>
@@ -141,6 +142,7 @@
 													<td><?php echo "$row[cantidad] <a href='edititems.php?edit2=$row[id]' class='btn btn-default'> editar </a>";?></td>
 													<td><?php echo "$row[valorunitario] <a href='edititems.php?edit3=$row[id]' class='btn btn-default'> editar </a>";?></td>
                           <td><?php echo "<a href='edititems.php?edit4=$row[id]' class='btn btn-default'> Eliminar item</a>";?></td>
+													<td><?php echo "<a href='edititems.php?edit5=$row[id]' class='btn btn-default'> Solicitar item</a>";?></td>
 											</tr>
 
 											<?php endwhile;?>
