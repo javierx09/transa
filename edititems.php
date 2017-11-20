@@ -56,6 +56,8 @@
 
 	{
 		$id = $_GET['edit5'];
+		$res= mysql_query("SELECT * FROM items WHERE id='$id'");
+		$row= mysql_fetch_array($res);
 		?>
 		<form action="edititems.php" method="POST">
 		cantidad a solicitar: <input type="text" name="solicitud"><br />
