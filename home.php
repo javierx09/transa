@@ -55,7 +55,7 @@
 													<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestionar Bodega</a>
 														<ul class="dropdown-menu">
 															<li><a href="agregaritem.php">Agregar Item</a></li>
-															<li><a href="modificaritem.php">Modificar Item</a></li>
+															<li><a href="items.php">Ver Items</a></li>
 															<li><a href="crearsolicitudrepuesto.php">Crear Solicitud Repuesto</a></li>
 															</ul
 												</li>';
