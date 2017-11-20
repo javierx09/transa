@@ -47,7 +47,7 @@
 			// if there's no error, continue to signup
 			if( !$error ) {
 
-				$query = "INSERT INTO items(nombre,cantidad,valorunitario) VALUES('$name','$cantidad','$valorunitario')";
+				$query = "INSERT INTO items(id,nombre,cantidad,valorunitario) VALUES('','$name','$cantidad','$valorunitario')";
 				$res = mysql_query($query);
 
 				if ($res) {
