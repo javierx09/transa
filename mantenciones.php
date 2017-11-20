@@ -28,14 +28,6 @@
 	<script type="text/javascript" src="get-text.js"></script>
 	</head>
 	<body>
-		<div class="container">
-				<div id="list-form">
-	        <form action="camiones.php" method="POST">
-							<div class="form-group">
-									<h2 class="">Buscar Camion.</h2>
-								</div>
-	            <input type="text" name="valueToSearch" class="search_1" placeholder="Patente de camión a buscar"><br><br>
-	            <input type="submit" name="mantenciones" class="btn btn-default" value="Filtrar"><br><br>
 							<?php
 							if(isset($_POST['mantenciones']))
 							{
