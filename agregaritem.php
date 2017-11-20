@@ -59,7 +59,7 @@
 					unset($tipo);
 				} else {
 					$errTyp = "danger";
-					$errMSG = "Hubo un problema, intente de nuevo...".mysql_error;
+					$errMSG = "Hubo un problema, intente de nuevo...". 'mysql_error';
 				}
 			}
 
