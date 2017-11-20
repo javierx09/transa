@@ -59,7 +59,7 @@
 															<li><a href="crearsolicitudrepuesto.php">Crear Solicitud Repuesto</a></li>
 															</ul
 												</li>';
-									echo '<li><a href="mantencion.php">Realizar Mantención</a></li>';
+									echo '<li><a href="home.php">Realizar Mantención</a></li>';
 
 							}
 						?>
