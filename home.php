@@ -39,7 +39,7 @@
 															<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestionar Camiones</a>
 																<ul class="dropdown-menu">
 																	<li><a href="agregarcamion.php">Agregar Camion</a></li>
-																	<li><a href="agregarcamion.php">Ver Camiones</a></li>
+																	<li><a href="camiones.php">Ver Camiones</a></li>
 																	</ul
 														</li>
 											<li class"dropdown">
