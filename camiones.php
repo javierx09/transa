@@ -28,7 +28,63 @@
 	<script type="text/javascript" src="get-text.js"></script>
 	</head>
 	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+							<?php
+								if(isset($_SESSION['user'])!="") {
+									if(($_SESSION['tipo'])==2){
+									echo '<li class"dropdown">
+													<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestionar Usuarios</a>
+														<ul class="dropdown-menu">
+															<li><a href="register.php">Registrar Usuario</a></li>
+															<li><a href="users.php">ver usuarios</a></li>
+															</ul
+												</li>
+												<li class"dropdown">
+																<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestionar Camiones</a>
+																	<ul class="dropdown-menu">
+																		<li><a href="agregarcamion.php">Agregar Camion</a></li>
+																		<li><a href="camiones.php">Ver Camiones</a></li>
+																		</ul
+															</li>
+												<li class"dropdown">
+																<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestionar Finanzas</a>
+																	<ul class="dropdown-menu">
+																		 <li><a href="Finanzas_funcion1.php">Finanzas_funcion</a></li>
+																		 <li><a href="Finanzas_funcion2.php">Finanzas_funcion2</a></li>
+																	</ul
+															</li>';
+
+										}
+										echo '<li class"dropdown">
+														<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestionar Bodega</a>
+															<ul class="dropdown-menu">
+																<li><a href="agregaritem.php">Agregar Item</a></li>
+																<li><a href="items.php">Ver Items</a></li>
+																<li><a href="crearsolicitudrepuesto.php">Crear Solicitud Repuesto</a></li>
+																</ul
+													</li>';
+										echo '<li><a href="mantencion.php">Realizar Mantención</a></li>';
+
+								}
+							?>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					<span class="glyphicon glyphicon-user"></span>&nbsp;Hola! <?php echo $userRow['userName']; ?>&nbsp;<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="logout.php?logout"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Salir del sistema</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div>
+			</nav>
 		<div class="container">
+			<div class="page-header"></div>
 				<div id="list-form">
 	        <form action="camiones.php" method="POST">
 							<div class="form-group">
