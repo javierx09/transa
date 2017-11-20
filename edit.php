@@ -25,7 +25,7 @@
 	if( isset($_GET['edit2']) )
 	{
 		$id = $_GET['edit2'];
-		$res= mysql_query("SELECT * FROM users WHERE userName='$id'");
+		$res= mysql_query("SELECT * FROM users WHERE userId='$id'");
 		$row= mysql_fetch_array($res);
 		?>
 		<form action="edit.php" method="POST">

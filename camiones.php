@@ -32,9 +32,9 @@
 				<div id="list-form">
 	        <form action="users.php" method="POST">
 							<div class="form-group">
-									<h2 class="">BUSCAR USUARIO.</h2>
+									<h2 class="">Buscar Camion.</h2>
 								</div>
-	            <input type="text" name="valueToSearch" class="search_1" placeholder="Rut a buscar sin puntos ni guión"><br><br>
+	            <input type="text" name="valueToSearch" class="search_1" placeholder="Patente de camión a buscar"><br><br>
 	            <input type="submit" name="search" class="btn btn-default" value="Filtrar"><br><br>
 							<?php
 							if(isset($_POST['search']))
@@ -44,7 +44,7 @@
 									$valueToSearch = htmlspecialchars($valueToSearch);
 									// search in all table columns
 									// using concat mysql function
-									$query = "SELECT * FROM users WHERE CONCAT(userId, userName, TIPO) LIKE '%".$valueToSearch."%'";
+									$query = "SELECT * FROM camiones WHERE CONCAT(patente, ano, descripcion) LIKE '%".$valueToSearch."%'";
 									$search_result = filterTable($query);
 									$count = mysql_num_rows($search_result);
 									if($count!=0){
@@ -81,10 +81,10 @@
 
 											<?php while($row = mysql_fetch_array($search_result)):?>
 											<tr>
-													<td><?php echo "$row[userId] <a href='edit.php?edit1=$row[userId]' class='btn btn-default'> editar </a>";?></td>
-													<td><?php echo "$row[userName] <a href='edit.php?edit2=$row[userId]' class='btn btn-default'> editar </a>";?></td>
-													<td><?php if(($row['TIPO'])==2){echo "Administrador <a href='edit.php?edit3=$row[userId]' class='btn btn-default'> editar </a>";}else{echo "Supervisor <a href='edit.php?edit3=$row[userId]' class='btn btn-default'> editar </a>";}?></td>
-                          <td><?php echo "<a href='edit.php?edit4=$row[userId]' class='btn btn-default'> Eliminar usuario</a>";?></td>
+													<td><?php echo "$row[patente] <a href='edit.php?edit1=$row[userId]' class='btn btn-default'> editar </a>";?></td>
+													<td><?php echo "$row[ano] <a href='edit.php?edit2=$row[userName]' class='btn btn-default'> editar </a>";?></td>
+													<td><?php echo "$row[descripcion] <a href='edit.php?edit3=$row[userName]' class='btn btn-default'> editar </a>";?></td>
+                          <td><?php echo "<a href='edit.php?edit4=$row[userId]' class='btn btn-default'> Eliminar camion</a>";?></td>
 											</tr>
 
 											<?php endwhile;?>
