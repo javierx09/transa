@@ -28,7 +28,9 @@
 	<script type="text/javascript" src="get-text.js"></script>
 	</head>
 	<body>
-		<h2 class="">Mantenciones.</h2>
+		<div class="form-group">
+				<h2 class="">Ver Mantenciones.</h2>
+			</div>
 							<?php
 							if(isset($_GET['mantenciones']))
 							{
