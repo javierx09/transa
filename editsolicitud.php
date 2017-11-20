@@ -29,7 +29,7 @@
 		$row= mysql_fetch_array($res);
 		?>
 		<form action="editsolicitud.php" method="POST">
-		Cantidad: <input type="text" name="newsomething" value="<?php echo $row[1]; ?>"><br />
+		Fecha: <input type="text" name="newsomething" value="<?php echo $row[1]; ?>"><br />
 		<input type="hidden" name="id" value="<?php echo $row[0]; ?>">
 		<input type="hidden" name="tipo" value="fecha">
 		<input type="submit" value=" Actualizar "/>
@@ -45,7 +45,7 @@
 		$row= mysql_fetch_array($res);
 		?>
 		<form action="editsolicitud.php" method="POST">
-		Valor Unitario: <input type="text" name="newsomething" value="<?php echo $row[2]; ?>"><br />
+		cantidad: <input type="text" name="newsomething" value="<?php echo $row[2]; ?>"><br />
 		<input type="hidden" name="id" value="<?php echo $row[0]; ?>">
 		<input type="hidden" name="tipo" value="cantidad">
 		<input type="submit" value=" Actualizar "/>
