@@ -66,7 +66,7 @@
 		$sql     ="UPDATE items SET $tipo='$newsomething' WHERE id='$id';";
 		$res 	 = mysql_query($sql)
                                     or die("Could not update".mysql_error());
-		echo "<meta http-equiv='refresh' content='0;url=users.php'>";
+		echo "<meta http-equiv='refresh' content='0;url=items.php'>";
 	}
 }else{
 	header("Location: home.php");
