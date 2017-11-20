@@ -20,7 +20,7 @@
 	<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Buscar Usuario</title>
+	<title>Buscar Item</title>
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<script src="assets/jquery-1.11.3-jquery.min.js"></script>
