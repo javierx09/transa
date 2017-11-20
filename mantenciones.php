@@ -28,13 +28,15 @@
 	<script type="text/javascript" src="get-text.js"></script>
 	</head>
 	<body>
-		<div class="form-group">
-				<h2 class="">Ver Mantenciones.</h2>
-			</div>
+		<div class="container">
+				<div id="list-form">
+							<div class="form-group">
+									<h2 class="">Mantenciones.</h2>
+								</div>
 							<?php
 							if(isset($_GET['mantenciones']))
 							{
-									$valueToSearch = trim($_POST['mantenciones']);
+									$valueToSearch = trim($_GET['mantenciones']);
 									$valueToSearch = strip_tags($valueToSearch);
 									$valueToSearch = htmlspecialchars($valueToSearch);
 									// search in all table columns
@@ -94,7 +96,6 @@
 
 
 
-	        </form>
 				</div>
 				</div>
 
