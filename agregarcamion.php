@@ -123,7 +123,7 @@
 															<ul class="dropdown-menu">
 																<li><a href="agregaritem.php">Agregar Item</a></li>
 																<li><a href="items.php">Ver Items</a></li>
-																<li><a href="crearsolicitudrepuesto.php">Crear Solicitud Repuesto</a></li>
+																<li><a href="solicitudes.php">Ver solicitudes de repuesto</a></li>
 																</ul
 													</li>';
 										echo '<li><a href="mantencion.php">Realizar Mantención</a></li>';
