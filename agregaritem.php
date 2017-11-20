@@ -41,7 +41,7 @@
 			// password validation
 			if (empty($valorunitario)){
 				$error = true;
-				$passError = "Por favor ingrese un precio unitario";
+				$valorunitarioError = "Por favor ingrese un precio unitario";
 			}
 
 			// if there's no error, continue to signup
@@ -116,17 +116,16 @@
 	            <div class="form-group">
 	            	<div class="input-group">
 	                <span class="input-group-addon"><span class="glyphicon glyphicon-flash"></span></span>
-	            	<input type="text" name="cantidad" class="form-control" placeholder="Ingrese Cantidad a agregar" maxlength="40" pattern="[0-9]{20}" title="No puede contener ninguna letra"/>
+	            	<input type="text" name="cantidad" class="form-control" placeholder="Ingrese Cantidad a agregar" maxlength="40" pattern="[0-9]{1,20}" title="No puede contener ninguna letra"/>
 	                </div>
-									<span class="text-danger"><?php echo $idError; ?></span>
 	            </div>
 
 	            <div class="form-group">
 	            	<div class="input-group">
 	                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-	            	<input type="password" name="valorunitario" class="form-control" placeholder="Ingrese valor unitario sin puntos" maxlength="15" pattern="[0-9]{40}" title="No puede contener ningún punto ni coma"/>
+	            	<input type="text" name="valorunitario" class="form-control" placeholder="Ingrese valor unitario sin puntos" maxlength="15" pattern="[0-9]{1,40}" title="No puede contener ningún punto ni coma"/>
 	                </div>
-	                <span class="text-danger"><?php echo $passError; ?></span>
+	                <span class="text-danger"><?php echo $valorunitarioError; ?></span>
 	            </div>
 
 
