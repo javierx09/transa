@@ -12,10 +12,10 @@
 		$row= mysql_fetch_array($res);
 		?>
 		<form action="edititems.php" method="POST">
-		Rut: <input type="text" name="newsomething" value="<?php echo $row[0]; ?>"><br />
+		Nombre: <input type="text" name="newsomething" value="<?php echo $row[0]; ?>"><br />
 		<input type="hidden" name="id" value="<?php echo $row[0]; ?>">
 		<input type="hidden" name="tipo" value="nombre">
-		<input type="submit" value=" Update "/>
+		<input type="submit" value=" Actualizar "/>
 		</form>
 
 					<?php
@@ -29,10 +29,10 @@
 		$row= mysql_fetch_array($res);
 		?>
 		<form action="edititems.php" method="POST">
-		Name: <input type="text" name="newsomething" value="<?php echo $row[1]; ?>"><br />
+		Cantidad: <input type="text" name="newsomething" value="<?php echo $row[1]; ?>"><br />
 		<input type="hidden" name="id" value="<?php echo $row[0]; ?>">
 		<input type="hidden" name="tipo" value="cantidad">
-		<input type="submit" value=" Update "/>
+		<input type="submit" value=" Actualizar "/>
 		</form>
 				<?php
 	}
@@ -45,10 +45,10 @@
 		$row= mysql_fetch_array($res);
 		?>
 		<form action="edititems.php" method="POST">
-		Name: <input type="text" name="newsomething" value="<?php echo $row[2]; ?>"><br />
+		Valor Unitario: <input type="text" name="newsomething" value="<?php echo $row[2]; ?>"><br />
 		<input type="hidden" name="id" value="<?php echo $row[0]; ?>">
 		<input type="hidden" name="tipo" value="valorunitario">
-		<input type="submit" value=" Update "/>
+		<input type="submit" value=" Actualizar "/>
 		</form>
 				<?php
 	}

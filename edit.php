@@ -15,7 +15,7 @@
 		Rut: <input type="text" name="newsomething" value="<?php echo $row[0]; ?>"><br />
 		<input type="hidden" name="id" value="<?php echo $row[0]; ?>">
 		<input type="hidden" name="tipo" value="userId">
-		<input type="submit" value=" Update "/>
+		<input type="submit" value=" Actualizar "/>
 		</form>
 
 					<?php
@@ -32,7 +32,7 @@
 		Name: <input type="text" name="newsomething" value="<?php echo $row[1]; ?>"><br />
 		<input type="hidden" name="id" value="<?php echo $row[0]; ?>">
 		<input type="hidden" name="tipo" value="userName">
-		<input type="submit" value=" Update "/>
+		<input type="submit" value=" Actualizar "/>
 		</form>
 				<?php
 	}
@@ -51,7 +51,7 @@
 					</select>
 		<input type="hidden" name="id" value="<?php echo $row[0]; ?>">
 		<input type="hidden" name="tipo" value="TIPO">
-		<input type="submit" value=" Update "/>
+		<input type="submit" value=" Actualizar "/>
 		</form>
 			<?php
 	}

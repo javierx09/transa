@@ -15,7 +15,7 @@
 		Patente: <input type="text" name="newsomething" value="<?php echo $row[0]; ?>"><br />
 		<input type="hidden" name="id" value="<?php echo $row[0]; ?>">
 		<input type="hidden" name="tipo" value="patente">
-		<input type="submit" value=" Update "/>
+		<input type="submit" value=" Actualizar "/>
 		</form>
 
 					<?php
@@ -32,7 +32,7 @@
 		año: <input type="text" name="newsomething" value="<?php echo $row[1]; ?>"><br />
 		<input type="hidden" name="id" value="<?php echo $row[0]; ?>">
 		<input type="hidden" name="tipo" value="ano">
-		<input type="submit" value=" Update "/>
+		<input type="submit" value=" Actualizar "/>
 		</form>
 				<?php
 	}
@@ -48,7 +48,7 @@
 		Descripcion: <input type="text" name="newsomething" value="<?php echo $row[2]; ?>"><br />
 		<input type="hidden" name="id" value="<?php echo $row[0]; ?>">
 		<input type="hidden" name="tipo" value="descripcion">
-		<input type="submit" value=" Update "/>
+		<input type="submit" value=" Actualizar "/>
 		</form>
 			<?php
 	}
