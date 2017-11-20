@@ -115,7 +115,7 @@
 
 	            <div class="form-group">
 	            	<div class="input-group">
-	                <span class="input-group-addon"><span class="glyphicon glyphicon-truck"></span></span>
+	                <span class="input-group-addon"><span class="glyphicon glyphicon-tag"></span></span>
 	            	<input type="text" name="patente" class="form-control" placeholder="Ingresa Patente" pattern="[0-9a-zA-Z]{6,15}" maxlength="14" title="Debe ingresar patente sin espacios ni guiones" />
 	                </div>
 	                <span class="text-danger"><?php echo $patenteError; ?></span>
@@ -131,7 +131,7 @@
 
 	            <div class="form-group">
 	            	<div class="input-group">
-	                <span class="input-group-addon"><span class="glyphicon glyphicon-chat"></span></span>
+	                <span class="input-group-addon"><span class="glyphicon glyphicon-comment"></span></span>
 	            	<input type="text" name="descripcion" class="form-control" placeholder="si desea, escriba una descripción" maxlength="59" />
 	                </div>
 	                <span class="text-danger"><?php echo $descripcionError; ?></span>
