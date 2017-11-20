@@ -55,7 +55,6 @@
 
 
 
-			// if there's no error, continue to signup
 			if( !$error ) {
 
 				$query = "INSERT INTO camiones(patente,año,descripcion) VALUES('$patente','$año','$descripcion')";
