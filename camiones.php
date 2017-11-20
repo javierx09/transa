@@ -30,7 +30,7 @@
 	<body>
 		<div class="container">
 				<div id="list-form">
-	        <form action="users.php" method="POST">
+	        <form action="camiones.php" method="POST">
 							<div class="form-group">
 									<h2 class="">Buscar Camion.</h2>
 								</div>
