@@ -2,7 +2,7 @@
 	ob_start();
 	session_start();
 	include_once('dbconnect.php');
-	if(isset($_SESSION['user'])!="" && ($_SESSION['tipo'])==2){
+	if(isset($_SESSION['user'])!=""){
 		include_once 'dbconnect.php';
 
 	if( isset($_GET['edit1']) )
