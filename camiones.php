@@ -138,7 +138,7 @@
 
 											<?php while($row = mysql_fetch_array($search_result)):?>
 											<tr>
-													<td><?php echo "$row[patente] <a href='editcamion.php?edit1=$row[patente]' class='btn btn-default'> editar </a>";?></td>
+													<td><?php echo "$row[patente] <a href='editcamion.php?edit1=$row[patente]'</a>";?></td>
 													<td><?php echo "$row[ano] <a href='editcamion.php?edit2=$row[patente]' class='btn btn-default'> editar </a>";?></td>
 													<td><?php echo "$row[descripcion] <a href='editcamion.php?edit3=$row[patente]' class='btn btn-default'> editar </a>";?></td>
                           <td><?php echo "<a href='editcamion.php?edit4=$row[patente]' class='btn btn-default'> Eliminar camion</a>";?></td>
