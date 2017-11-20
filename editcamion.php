@@ -11,7 +11,7 @@
 		$res= mysql_query("SELECT * FROM camiones WHERE patente='$id'");
 		$row= mysql_fetch_array($res);
 		?>
-		<form action="edit.php" method="POST">
+		<form action="editcamion.php" method="POST">
 		Patente: <input type="text" name="newsomething" value="<?php echo $row[0]; ?>"><br />
 		<input type="hidden" name="id" value="<?php echo $row[0]; ?>">
 		<input type="hidden" name="tipo" value="patente">
@@ -28,7 +28,7 @@
 		$res= mysql_query("SELECT * FROM camiones WHERE patente='$id'");
 		$row= mysql_fetch_array($res);
 		?>
-		<form action="edit.php" method="POST">
+		<form action="editcamion.php" method="POST">
 		año: <input type="text" name="newsomething" value="<?php echo $row[1]; ?>"><br />
 		<input type="hidden" name="id" value="<?php echo $row[0]; ?>">
 		<input type="hidden" name="tipo" value="ano">
@@ -44,7 +44,7 @@
 		$res= mysql_query("SELECT * FROM camiones WHERE patente='$id'");
 		$row= mysql_fetch_array($res);
 		?>
-		<form action="edit.php" method="POST">
+		<form action="editcamion.php" method="POST">
 		Descripcion: <input type="text" name="newsomething" value="<?php echo $row[2]; ?>"><br />
 		<input type="hidden" name="id" value="<?php echo $row[0]; ?>">
 		<input type="hidden" name="tipo" value="descripcion">
