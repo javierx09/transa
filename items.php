@@ -84,6 +84,9 @@
 				</div>
 			</nav>
 		<div class="container">
+			<div class="page-header">
+			<h3>Noticias Recientes! (aqui se podría colocar alguna notificacion por si algun item no tiene stock)</h3>
+			</div>
 				<div id="list-form">
 	        <form action="items.php" method="POST">
 							<div class="form-group">
