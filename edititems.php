@@ -81,9 +81,7 @@
                                     or die("Could not update".mysql_error());
 		echo "<meta http-equiv='refresh' content='0;url=items.php'>";
 	}
-}else{
-	header("Location: home.php");
-}
+
 if(isset($_POST['solicitud']))
 {
 
