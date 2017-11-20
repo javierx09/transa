@@ -59,7 +59,6 @@
 
 				$query = "INSERT INTO camiones(patente,año,descripcion) VALUES('$patente','$año','$descripcion')";
 				$res = mysql_query($query);
-
 				if ($res) {
 					$errTyp = "success";
 					$errMSG = "camión creado de forma correcta!";
@@ -68,7 +67,7 @@
 					unset($descripcion);
 				} else {
 					$errTyp = "danger";
-					$errMSG = "Hubo un problema, intente de nuevo...";
+					$errMSG = "Hubo un problema, intente de nuevo...".mysql_error();
 				}
 			}
 
