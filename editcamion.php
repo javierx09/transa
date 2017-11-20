@@ -66,7 +66,7 @@
 		$sql     ="UPDATE camiones SET $tipo='$newsomething' WHERE patente='$id';";
 		$res 	 = mysql_query($sql)
                                     or die("Could not update".mysql_error());
-		echo "<meta http-equiv='refresh' content='0;url=users.php'>";
+		echo "<meta http-equiv='refresh' content='0;url=camiones.php'>";
 	}
 }else{
 	header("Location: home.php");
