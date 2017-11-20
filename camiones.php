@@ -73,18 +73,18 @@
 									<body>
 									<table id="employee_grid" class="table table-condensed table-hover table-striped bootgrid-table" width="60%" cellspacing="0">
 											<tr>
-													<th>Rut</th>
-													<th>Nombre</th>
-													<th>Tipo</th>
+													<th>Patente</th>
+													<th>Año</th>
+													<th>Descripcion</th>
 													<th>Eliminar</th>
 											</tr>
 
 											<?php while($row = mysql_fetch_array($search_result)):?>
 											<tr>
-													<td><?php echo "$row[patente] <a href='edit.php?edit1=$row[userId]' class='btn btn-default'> editar </a>";?></td>
-													<td><?php echo "$row[ano] <a href='edit.php?edit2=$row[userName]' class='btn btn-default'> editar </a>";?></td>
-													<td><?php echo "$row[descripcion] <a href='edit.php?edit3=$row[userName]' class='btn btn-default'> editar </a>";?></td>
-                          <td><?php echo "<a href='edit.php?edit4=$row[userId]' class='btn btn-default'> Eliminar camion</a>";?></td>
+													<td><?php echo "$row[patente] <a href='editcamion.php?edit1=$row[patente]' class='btn btn-default'> editar </a>";?></td>
+													<td><?php echo "$row[ano] <a href='editcamion.php?edit2=$row[patente]' class='btn btn-default'> editar </a>";?></td>
+													<td><?php echo "$row[descripcion] <a href='editcamion.php?edit3=$row[patente]' class='btn btn-default'> editar </a>";?></td>
+                          <td><?php echo "<a href='editcamion.php?edit4=$row[patente]' class='btn btn-default'> Eliminar camion</a>";?></td>
 											</tr>
 
 											<?php endwhile;?>
@@ -95,7 +95,7 @@
 								}
 
 							}else {
-									$query = "SELECT * FROM users";
+									$query = "SELECT * FROM camiones";
 									$search_result = filterTable($query);
 							}
 
