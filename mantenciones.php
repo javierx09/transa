@@ -28,8 +28,9 @@
 	<script type="text/javascript" src="get-text.js"></script>
 	</head>
 	<body>
+		<h2 class="">Mantenciones.</h2>
 							<?php
-							if(isset($_POST['mantenciones']))
+							if(isset($_GET['mantenciones']))
 							{
 									$valueToSearch = trim($_POST['mantenciones']);
 									$valueToSearch = strip_tags($valueToSearch);
