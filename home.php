@@ -21,7 +21,7 @@
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -86,7 +86,7 @@
 
         <div class="row">
         <div class="col-lg-12">
-        <h1>oliwi</h1>
+        <h2>oliwi</h2>
         </div>
         </div>
 
